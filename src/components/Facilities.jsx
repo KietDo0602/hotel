@@ -1,7 +1,7 @@
 import React from 'react'
 import Restraunt from './Restraunt'
 import Spaz from '../assets/spaz.jpg'
-import pool from '../assets/swimmingpool.jpg'
+// import pool from '../assets/swimmingpool.jpg'
 import gym from '../assets/gym.jpg'
 import rest from '../assets/img/restrauant.jpg'
 import { useContext } from 'react'
