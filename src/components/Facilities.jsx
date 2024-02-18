@@ -180,7 +180,7 @@ const Facilities = () => {
               </div>  
                </div>
                <div className='lg:w-1/2' >
-                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../assets/img/conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
+                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
                </div>
              </div>
              <div className='flex lg:flex-row flex-col  justify-between'>
@@ -197,7 +197,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../assets/img/restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -217,7 +217,7 @@ const Facilities = () => {
                </div>
              </div>
              <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../assets/img/spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
              </div>
               {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
             </div>
@@ -236,7 +236,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../assets/img/gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 
