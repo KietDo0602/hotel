@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
-import hotel from '../assets/hotel.jpg'
-import rest from '../assets/img/restrauant.jpg'
-import Spaz from '../assets/spaz.jpg'
+// import hotel from '../assets/hotel.jpg'
+// import rest from '../assets/img/restrauant.jpg'
+// import Spaz from '../assets/spaz.jpg'
 // import pool from '../assets/swimmingpool.jpg'
 import gym from '../assets/gym.jpg'
 import hotel2 from '../assets/hotel2.jpg'
@@ -174,20 +174,20 @@ const AboutPage = () => {
        {/* {Amenities} */}
 
         <div className='w-full h-full flex lg:py-16 py-16 px-4'>
-          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../assets/img/spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
 
           </div>
           <div className='w-1/2 h-[800px] flex flex-col gap-4 p-4'>
-            <div className='w-full h-1/2' style={{backgroundImage:"url('../assets/img/hotel2.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+            <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel2.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
             </div>
-            <div className='w-full h-1/2' style={{backgroundImage:"url('../assets/img/hotel.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+            <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
             </div>
 
           </div>
-          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../assets/img/spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
 
           </div>

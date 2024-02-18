@@ -1,9 +1,9 @@
 import React from 'react'
-import Restraunt from './Restraunt'
-import Spaz from '../assets/spaz.jpg'
+// import Restraunt from './Restraunt'
+// import Spaz from '../assets/spaz.jpg'
 // import pool from '../assets/swimmingpool.jpg'
-import gym from '../assets/gym.jpg'
-import rest from '../assets/img/restrauant.jpg'
+// import gym from '../assets/gym.jpg'
+// import rest from '../assets/img/restrauant.jpg'
 import { useContext } from 'react'
 import { RoomContext } from '../context/RoomContext'
 import MenuRes from './MenuRes'
@@ -79,7 +79,7 @@ const Facilities = () => {
            </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' >
-              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../assets/img/conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/* <img src={rest} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -111,7 +111,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../assets/img/restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -119,7 +119,7 @@ const Facilities = () => {
           </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../assets/img/spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
               </div>
               {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
@@ -151,7 +151,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../assets/img/gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 
