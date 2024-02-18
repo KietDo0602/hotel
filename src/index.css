@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-5 h-5;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply rounded-full bg-slate-500 dark:bg-slate-700;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-500 dark:bg-slate-600;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+}
+
+
+@layer base {
+  body {
+    @apply font-secondary text-primary;
+  }
+  input::placeholder {
+    @apply text-primary;
+  }
+  .h2 {
+    @apply font-primary text-[45px] mb-4;
+  }
+  .h3 {
+    @apply text-2xl font-primary font-semibold tracking-[1px] mb-2;
+  }
+  .btn {
+    @apply text-[15px] tracking-[3px] font-tertiary uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
+  }
+  .btn-sm {
+    @apply h-[48px];
+  }
+  .btn-lg {
+    @apply h-[60px];
+  }
+  .btn-primary {
+    @apply bg-red-800 hover:bg-red-800;
+  }
+  .btn-secondary {
+    @apply bg-primary hover:bg-red-800;
+  }
+  .btn-white {
+    @apply bg-white text-[#0a0a0a];
+  }
+
+
+  
+  
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  50%{transform:rotate(0deg)}
+  100% { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 5s linear infinite ; /* Adjust the duration (2s) to control the speed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.new {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 4vw;
+}
+
+.new:first-of-type {
+  text-transform: uppercase;
+  font-size: 7vw;
+}
+
+.new:first-of-type {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.new:nth-of-type(even) {
+  background: #fff;
+}
+
+.new:nth-of-type(1) {
+  background-image: url('./assets/gym.jpg');
+}
+
+.new:nth-of-type(3) {
+  background-image: url('./assets/gym.jpg');
+}
+
+.new:nth-of-type(5) {
+  background-image: url('./assets/hotel2.jpg');
+} 
+
+
+
