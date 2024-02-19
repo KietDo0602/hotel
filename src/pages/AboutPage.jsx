@@ -19,7 +19,8 @@ import "aos/dist/aos.css";
 import { teamList } from '../data'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectFade, Autoplay, Pagination} from 'swiper'
-import { FaQuoteLeft } from 'react-icons/fa6'
+import { FaMedal, FaQuoteLeft } from 'react-icons/fa6'
+import { FaAward } from "react-icons/fa6";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -174,20 +175,32 @@ const AboutPage = () => {
        {/* {Amenities} */}
 
         <div className='w-full h-full flex lg:py-16 py-16 px-4'>
-          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+          <div className='lg:w-1/4 w-16 h-[600px]'  style={{backgroundImage:"url('https://images.unsplash.com/photo-1567360425618-1594206637d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fHww')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
 
           </div>
-          <div className='w-1/2 h-[800px] flex flex-col gap-4 p-4'>
-            <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel2.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+          <div className='lg:w-1/2 h-[800px] flex flex-col gap-4 items-center justify-center p-8'>
+            <div className='flex lg:flex-row flex-col justify-start gap-4'>
+               <div className='flex flex-col items-center justify-center'>
+                 <h1 className='text-red-800 font-semibold font-primary text-4xl text-center'>World Luxury Hotels Award</h1>
+                 <p className='text-white text-center text-6xl font-bold'>2024</p>
+               </div>
+               <div>
+                 <FaAward color='#a37d4c' size={200}/>
+               </div>
+            </div>
+            <div className='py-16 align-bottom'>
+              <h1 className='text-accent text-2xl italic font-tertiary text-center'>Best Luxury Hotel In <br/> SAN FRANSISCO</h1>
+            </div>
+            {/* <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel2.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
             </div>
             <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
-            </div>
+            </div> */}
 
           </div>
-          <div className='w-1/4 h-[600px]'  style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+          <div className='lg:w-1/4 w-16 h-[600px]'  style={{backgroundImage:"url('https://images.unsplash.com/photo-1567360425618-1594206637d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fHww')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
 
           </div>
@@ -201,7 +214,7 @@ const AboutPage = () => {
          
         {/*YEARS OF EXPERIENCE*/}
         
-        <div className='w-full h-48 text-white flex flex-col justify-center items-center'>
+        <div className='w-full h-48  text-white flex flex-col justify-center items-center'>
           <div className='flex flex-col justify-center items-center text-accent font-primary font-semibold text-3xl py-8'>
             Our Service
           </div>
