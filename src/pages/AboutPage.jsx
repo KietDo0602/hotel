@@ -150,7 +150,7 @@ const AboutPage = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae orci sodales Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet odio est. 
              </p>
              <div className='flex flex-col justify-center w-full items-center'>
-              <div className='flex gap-24 px-4 py-8'>
+              <div className='flex lg:flex-row flex-col lg:gap-24 gap-4 px-4 lg:py-8 py-6'>
                 <img src={ceo} className='p-2 w-28 h-28'/>
                 <div className='flex flex-col justify-center'>
                    <h1 className='text-2xl'>Mark Austin</h1>
@@ -205,24 +205,26 @@ const AboutPage = () => {
           <div className='flex flex-col justify-center items-center text-accent font-primary font-semibold text-3xl py-8'>
             Our Service
           </div>
-          <div className='flex gap-8'>
+          <div className='p-4'>
+            <div className='flex lg:flex-row flex-col gap-8'>
            <div>
               <h1 className='text-3xl text-red-800 font-primary'>17+</h1>
-              <span className='text-lg font-secondary'>Years of Hospitality</span>
+              <span className='lg:text-lg font-secondary'>Years of Hospitality</span>
            </div> 
            <div>
             <h1 className='text-3xl text-red-800 font-primary'>80+</h1>
-            <span className='text-lg font-secondary'>Luxurious Rooms</span>
+            <span className='lg:text-lg font-secondary'>Luxurious Rooms</span>
            </div>
            <div>
              <h1 className='text-3xl text-red-800 font-primary'>57+</h1>
-             <span className='text-lg font-secondary'>Dedicated Staff Members</span>
+             <span className='lg:text-lg font-secondary'>Dedicated Staff Members</span>
            </div>
            <div>
              <h1 className='text-3xl text-red-800'>21+</h1>
-             <span className='text-lg font-secondary'>Awards and Accolades</span>
+             <span className='lg:text-lg font-secondary'>Awards and Accolades</span>
            </div>
-          </div> 
+            </div> 
+          </div>
         </div>
 
 
@@ -237,8 +239,8 @@ const AboutPage = () => {
             <div className='flex flex-col items-center'>
                <div className='w-full flex flex-col items-center px-28 justify-center  py-12'>
                  {/* <img src={Logo} className='w-28 h-28 opacity-80 '/> */}
-                   <h1 className='text-accent text-3xl font-bold font-primary'>OUR TEAMS</h1>
-                  <p className='w-1/2 text-center py-4 text-white text-xl'>Staff members at Royal Hotels</p>
+                   <h1 className='text-accent text-3xl font-bold text-center font-primary'>OUR TEAMS</h1>
+                  <p className='lg:w-1/2 w-full text-center py-4 text-white text-xl'>Staff members at Royal Hotels</p>
                 </div>
                 <div className='px-4'> 
                 <div style={isMidMobile ? grid2ContainerStyle : gridContainerStyle} className='mt-2 w-full flex flex-col justify-end xl:px-4'>
