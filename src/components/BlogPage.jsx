@@ -9,7 +9,7 @@ const BlogPage = () => {
           <p className='font-secondary'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
           <div className='py-8 px-6 hidden lg:block'>
-            <button className='btn btn-md btn-secondary p-4'>Read More</button>
+            <button className='btn btn-md btn-secondary p-4'><a href="/blog">Read More</a></button>
           </div>
         </div>
         <div className='lg:w-3/4 w-full p-4'>

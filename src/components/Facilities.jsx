@@ -79,7 +79,7 @@ const Facilities = () => {
            </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' >
-              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/* <img src={rest} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -111,7 +111,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -119,7 +119,7 @@ const Facilities = () => {
           </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
               </div>
               {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
@@ -151,7 +151,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 
@@ -180,7 +180,7 @@ const Facilities = () => {
               </div>  
                </div>
                <div className='lg:w-1/2' >
-                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../conferenceRoom.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
+                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
                </div>
              </div>
              <div className='flex lg:flex-row flex-col  justify-between'>
@@ -197,7 +197,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('../restrauant.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
@@ -217,7 +217,7 @@ const Facilities = () => {
                </div>
              </div>
              <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('../spaz.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
              </div>
               {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
             </div>
@@ -236,7 +236,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('../gym1.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 

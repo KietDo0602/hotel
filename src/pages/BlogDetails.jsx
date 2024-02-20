@@ -1,5 +1,5 @@
 import React,{useContext } from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 //components
 import AdultsDropdown from '../components/AdultsDropdown'
 import CheckIn from '../components/CheckIn'
@@ -22,7 +22,7 @@ const BlogDetails = () => {
    
   const{name, description, image} = blog;
   return (
-  <section className='bg-primary'>
+  <section className='bg-primary '>
     {/* <ScrollToTop/> */}
     {/*banner*/}
     <div className='bg-room bg-cover bg-center bg-fixed h-[560px] relative 
@@ -35,7 +35,7 @@ const BlogDetails = () => {
         {name}
       </h1>
     </div>
-    <div className='container mx-auto text-accent '>
+    <div className='container mx-auto text-accent lg:h-auto h-[2800px] '>
       <div className='flex flex-col lg:flex-row h-full py-24'>
         {/*left*/}
         <div className='w-full h-full lg:w-[60%] px-6 '>
@@ -91,11 +91,12 @@ const BlogDetails = () => {
             <div>
               <input type="text" placeholder='Search Post' />
             </div>
-            <div className='h-48 flex lg:flex-col lg:gap-8'>
+            <div className='h-48 flex flex-col lg:gap-8'>
               <h1>Popular Post</h1>
               {blogs.map((blog)=>(
                 <div className=' lg:flex gap-4' key={blog.id}>
-                  <img src={blog.image} className='lg:w-24 w-36 lg:h-24 h-36 hover:scale-110 transition-all duration-300'/>
+                  <Link to={`/blog/${blog.id}`}>
+                  <img src={blog.image} className='lg:w-24 w-36 lg:h-24 h-36 hover:scale-110 transition-all duration-300 '/>
                    <div className=' text-accent flex flex-col cursor-pointer'>
 
                    <h1 className='text-accent text-xl py-2 hover:underline'>{blog.name}</h1>
@@ -103,32 +104,10 @@ const BlogDetails = () => {
                      Read More
                   </span>
                    </div>
+                   </Link>
                 </div> 
                ))} 
             </div>
-            
-          
-            
-          {/* <div className='py-8 px-6 bg-accent/20 mb-12'>
-              <div className='flex flex-col space-y-4 mb-4'>
-                <h3>Your Reservation</h3>
-                <div className='h-[60px]'>
-                  <CheckIn/>
-                </div>
-                <div className='h-[60px]'>
-                  <CheckOut/>
-                </div>
-                <div className='h-[60px]'>
-                  <AdultsDropdown/>
-                </div>
-                <div className='h-[60px]'>
-                  <KidsDropdown/>
-                </div>
-              </div>
-              <button className='btn btn-lg btn-primary w-full'>
-                book now for 
-              </button>
-         </div> */}
 
         </div>
       </div>

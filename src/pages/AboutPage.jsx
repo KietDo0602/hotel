@@ -185,7 +185,7 @@ const AboutPage = () => {
                  <h1 className='text-red-800 font-semibold font-primary text-4xl text-center'>World Luxury Hotels Award</h1>
                  <p className='text-white text-center text-6xl font-bold'>2024</p>
                </div>
-               <div>
+               <div className='flex justify-center'>
                  <FaAward color='#a37d4c' size={200}/>
                </div>
             </div>
