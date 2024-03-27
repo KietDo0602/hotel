@@ -44,10 +44,10 @@
     @apply h-[60px];
   }
   .btn-primary {
-    @apply bg-red-800 hover:bg-red-800;
+    @apply bg-secondary hover:bg-secondary;
   }
   .btn-secondary {
-    @apply bg-primary hover:bg-red-800;
+    @apply bg-primary hover:bg-secondary;
   }
   .btn-white {
     @apply bg-white text-[#0a0a0a];

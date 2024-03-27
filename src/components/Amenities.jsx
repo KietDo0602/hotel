@@ -112,7 +112,7 @@ const Amenities = () => {
         <div className='flex flex-col items-center justify-center p-4'>
            <div style={handleGridStyle()}>
              {amenitiesList.map((item)=>(
-                <div key={item.id} data-aos="zoom-in-down" style={{ padding:isMobile ? '7rem' : '4rem', gridArea: `${item.id}`}} className='bg-red-800 shadow-xl hover:scale-110 transition-all duration-300 flex flex-col items-center'>
+                <div key={item.id} data-aos="zoom-in-down" style={{ padding:isMobile ? '7rem' : '4rem', gridArea: `${item.id}`}} className='bg-secondary shadow-xl hover:scale-110 transition-all duration-300 flex flex-col items-center'>
                    <span className='lg:text-4xl text-6xl text-accent'>{item.icon}</span>
                    <p className='text-accent lg:p-2'>{item.title}</p>
                 </div>

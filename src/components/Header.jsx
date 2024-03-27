@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-//login
 import LogoWhite from '../assets/img/logo-white.svg'
 import LogoDark from '../assets/img/logo-dark.svg'
 import Logo from '../assets/img/logo2Dark.svg'
@@ -24,7 +23,7 @@ const Header = () => {
     <header
      className={
       `${
-        header ? 'bg-red-800 py-2 lg:py-4 shadow-xl' : 'bg-transparent py-6'} fixed z-50 w-full transition-all duration-500`}>
+        header ? 'bg-secondary py-2 lg:py-4 shadow-xl' : 'bg-transparent py-6'} fixed z-50 w-full transition-all duration-500`}>
        <div className='container mx-auto flex  justify-between items-center gap-y-1 flex-row lg:gap-y-0 '>
          {/*logo*/}
          <a href='/'>
@@ -51,7 +50,7 @@ const Header = () => {
             <a className='py-1 cursor-pointer'>
                <SlArrowDown size={10} className='group-hover:text-accent' />
             </a>  
-            <div className=" absolute bg-red-800 w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className=" absolute bg-secondary w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className='flex flex-col gap-2'>
                    <a href='/rooms' className='hover:text-accent transition'>
                    Rooms   
@@ -70,7 +69,7 @@ const Header = () => {
              <a className='py-1 cursor-pointer'>
                <SlArrowDown size={10} className='group-hover:text-accent' />
              </a>  
-             <div className=" absolute bg-red-800 w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             <div className=" absolute bg-secondary w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className='flex flex-col gap-2'>
                    <a href='/blog' className='hover:text-accent transition'>
                    Blog   
@@ -90,7 +89,7 @@ const Header = () => {
         <div className=' block lg:hidden text-white'>
          < CgMenuGridO  color='white' size={20} onClick={()=>setOpenMenu(!openMenu)}/>
          {openMenu &&
-          <nav className={` bg-red-800  absolute right-0 top-0 h-screen lg:w-1/4 w-1/3 text-white flex flex-col font-tertiary tracking-[3px] text-[15px] items-start uppercase px-4 py-8 space-y-6`}>
+          <nav className={` bg-secondary  absolute right-0 top-0 h-screen lg:w-1/4 w-1/3 text-white flex flex-col font-tertiary tracking-[3px] text-[15px] items-start uppercase px-4 py-8 space-y-6`}>
             <div className='flex flex-col justify-start py-4'>
            < IoCloseOutline size={20} onClick={()=>setOpenMenu(!openMenu)} className='hover:rotate-90 transition-all duration-300'/>
             </div>
@@ -110,7 +109,7 @@ const Header = () => {
                    <SlArrowDown size={10} className='hover:text-accent  hover:rotate-90 transition-all duration-300' />
                  </a>  
                </div> 
-              <div className=" bg-red-800 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-0 right-20 hidden group-hover:block transition-opacity duration-300">
+              <div className=" bg-secondary h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-0 right-20 hidden group-hover:block transition-opacity duration-300">
                   <div className='flex flex-col gap-2'>
                      <a href='/rooms' className='hover:text-accent transition'>
                       Rooms   
@@ -132,7 +131,7 @@ const Header = () => {
                 <SlArrowDown size={10} className='group-hover:text-accent hover:rotate-90 transition-all duration-300' />
               </a>
              </div>
-              <div className=" bg-red-800 w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-0 right-20 hidden group-hover:block transition-opacity duration-300">
+              <div className=" bg-secondary w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-0 right-20 hidden group-hover:block transition-opacity duration-300">
                  <div className='flex flex-col gap-2'>
                     <a href='/blog' className='hover:text-accent transition w-full'>
                     Blog   

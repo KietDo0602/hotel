@@ -5,7 +5,7 @@ import {BsArrowsFullscreen, BsPeople} from 'react-icons/bs'
 const MenuRes = ({room}) => {
   const {image, description, id , name , size, maxPerson, price} = room
   return(
-    <div className='bg-red-800 shadow-2xl min-h-[300px] group'>
+    <div className='bg-secondary shadow-2xl min-h-[300px] group'>
       {/*image*/}
       <div className='group-hover:scale-110 transition-all duration-300 w-full'>
          <img src={image} alt=''/>

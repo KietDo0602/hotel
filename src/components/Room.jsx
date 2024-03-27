@@ -21,7 +21,7 @@ const Room = ({room}) => {
          <img src={image} alt=''/>
       </div>
       {/*details*/}
-      <div className='bg-red-800 shadow-lg max-w-[300px] mx-auto h-[60px]
+      <div className='bg-secondary shadow-lg max-w-[300px] mx-auto h-[60px]
        -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] 
        font-semibold text-base'>
         <div className='flex justify-between w-[80%]'>

@@ -74,7 +74,7 @@ const Contact = () => {
            </div>
 
         </div>
-        <div className='w-full bg-red-800 h-[540px] lg:py-10'>
+        <div className='w-full bg-secondary h-[540px] lg:py-10'>
           <form className='flex flex-col gap-4 p-4'>
             <label htmlFor="">GET IN TOUCH</label>
             <input type="text" placeholder="Your Name" className='py-4 px-2'/>

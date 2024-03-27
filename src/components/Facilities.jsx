@@ -1,9 +1,4 @@
 import React from 'react'
-// import Restraunt from './Restraunt'
-// import Spaz from '../assets/spaz.jpg'
-// import pool from '../assets/swimmingpool.jpg'
-// import gym from '../assets/gym.jpg'
-// import rest from '../assets/img/restrauant.jpg'
 import { useContext } from 'react'
 import { RoomContext } from '../context/RoomContext'
 import MenuRes from './MenuRes'
@@ -57,15 +52,12 @@ const Facilities = () => {
 
     const gridSmallDeviceStyle = {
       display:'grid',
-     // gridTemplateColumns:'repeat(4, 1fr)',
       gridTemplateRows:'repeat(1, 1fr)',
       gap:'1rem',
       gridTemplateAreas:'"a" "b" "c" "d" "e" "f" "g" "h"',
     };
       const gridItemStyle = {
-        // background: '#ccc',
         padding: '1.5rem', 
-        //original 1rem
       };
     
       return (
@@ -82,7 +74,7 @@ const Facilities = () => {
               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
-               {/* <img src={rest} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
+              
             </div>
             <div className='lg:w-1/2' data-aos="zoom-in" >
               <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
@@ -114,7 +106,7 @@ const Facilities = () => {
                <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
-              {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
+              
             </div>
           </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
@@ -122,7 +114,7 @@ const Facilities = () => {
                <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
               </div>
-              {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
+           
             </div>
             <div className='lg:w-1/2' data-aos="zoom-in"  >
               <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
@@ -154,7 +146,7 @@ const Facilities = () => {
               <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
-               {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 
+                
             </div>
           </div>
           </div>
@@ -200,7 +192,7 @@ const Facilities = () => {
                <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
-              {/* <img src={pool} className='w-full h-auto  hover:scale-110 transition-all duration-300' /> */}
+
             </div>
              </div>
              <div className='flex lg:flex-row flex-col  justify-between'>
@@ -219,7 +211,6 @@ const Facilities = () => {
              <div className='lg:w-1/2 w-full' >
                <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
              </div>
-              {/* <img src={Spaz} className='w-full h-auto hover:scale-110 transition-all duration-300 ' /> */}
             </div>
              </div>
              <div className='flex lg:flex-row flex-col justify-between'>
@@ -239,7 +230,6 @@ const Facilities = () => {
               <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
-               {/*<img src={gym} className='w-full h-auto hover:scale-110 transition-all duration-300 p-12' />*/} 
             </div>
              </div>
             </div>

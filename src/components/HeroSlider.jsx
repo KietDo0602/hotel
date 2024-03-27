@@ -100,14 +100,12 @@ const HeroSlider = () => {
 
 
          <div  className='absolute top-0  w-full h-full '> 
-          {/* <Parallax speed={0}> */}
              <img
              className={` object-cover bg-fixed  h-full w-full  ${index === activeIndex ? 'scale-110 transition-all duration-1000 ease-in-out' : 'scale-100 transition-all duration-1000 ease-in-out'}`} 
               src={bg}
               alt=''
-            
            /> 
-          {/* </Parallax> */}
+
         
            {/*overlay*/}
           <div className='absolute w-full  h-full bg-black/70'>

@@ -164,7 +164,7 @@ const AboutPage = () => {
             <button className='btn btn-lg btn-primary mx-auto'>MAKE A BOOKING</button>
          </div>
          </div>
-         <div className='flex flex-col items-center border-l border-red-800'>
+         <div className='flex flex-col items-center border-l border-secondary'>
              <img src={hotel2} className='lg:w-full lg:h-full h-72  relative px-4 py-6 hover:scale-110 transition-all duration-300 hidden lg:block'/>
             {/* <img src={hotel2} className='w-full h-full -py-48'/> */}
           </div>
@@ -182,7 +182,7 @@ const AboutPage = () => {
           <div className='lg:w-1/2 h-[800px] flex flex-col gap-4 items-center justify-center p-8'>
             <div className='flex lg:flex-row flex-col justify-start gap-4'>
                <div className='flex flex-col items-center justify-center'>
-                 <h1 className='text-red-800 font-semibold font-primary text-4xl text-center'>World Luxury Hotels Award</h1>
+                 <h1 className='text-secondary font-semibold font-primary text-4xl text-center'>World Luxury Hotels Award</h1>
                  <p className='text-white text-center text-6xl font-bold'>2024</p>
                </div>
                <div className='flex justify-center'>
@@ -221,19 +221,19 @@ const AboutPage = () => {
           <div className='p-4'>
             <div className='flex lg:flex-row flex-col gap-8'>
            <div>
-              <h1 className='text-3xl text-red-800 font-primary'>17+</h1>
+              <h1 className='text-3xl text-secondary font-primary'>17+</h1>
               <span className='lg:text-lg font-secondary'>Years of Hospitality</span>
            </div> 
            <div>
-            <h1 className='text-3xl text-red-800 font-primary'>80+</h1>
+            <h1 className='text-3xl text-secondary font-primary'>80+</h1>
             <span className='lg:text-lg font-secondary'>Luxurious Rooms</span>
            </div>
            <div>
-             <h1 className='text-3xl text-red-800 font-primary'>57+</h1>
+             <h1 className='text-3xl text-secondary font-primary'>57+</h1>
              <span className='lg:text-lg font-secondary'>Dedicated Staff Members</span>
            </div>
            <div>
-             <h1 className='text-3xl text-red-800'>21+</h1>
+             <h1 className='text-3xl text-secondary'>21+</h1>
              <span className='lg:text-lg font-secondary'>Awards and Accolades</span>
            </div>
             </div> 
@@ -284,7 +284,7 @@ const AboutPage = () => {
                 //destructure slide
             const {id,img, title, description}= slide;
               return (
-               <SwiperSlide  className='h-full w-full bg-red-800' key={id}>
+               <SwiperSlide  className='h-full w-full bg-secondary' key={id}>
                  <div className=' text-white text-center p-4'>
                    <p className='font-secondary italic text-black lg:text-2xl text-xl'><FaQuoteLeft className='text-accent' />{description}</p>
                    <div className='flex flex-col items-center py-2'>

@@ -43,7 +43,7 @@ const Blog = () => {
     r=2
     space=10
    }else{
-    r=2
+    r=3
     space=50
    }
   

@@ -1,4 +1,3 @@
-
 import React,{useContext} from 'react';
 import Logo from '../assets/img/logo2Dark.svg'
 import { IoLocation } from "react-icons/io5";
@@ -6,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt, FaInstagram, FaTwitter, FaPinterest,  FaYoutube, FaFacebook } from "react-icons/fa";
 import { RoomContext } from '../context/RoomContext';
 import Bew from '../assets/hotel.jpg'
-//logo
+
 
 
 const Footer = () => {
@@ -16,7 +15,7 @@ const Footer = () => {
     <div className='w-full lg:h-28 h-80 bg-primary'>
 
     </div>
-     <div className='w-full md:h-[400px] h-[780px] bg-red-800 relative flex lg:flex-row flex-col py-24'>
+     <div className='w-full md:h-[400px] h-[780px] bg-secondary relative flex lg:flex-row flex-col py-24'>
         <div className='flex md:flex-row flex-col items-start w-full  gap-4  lg:px-24 px-6  text-white justify-center'>
         <div className='flex flex-col lg:py-0 py-12 items-start lg:w-1/3 '>
            <h1 className='font-primary py-2'>NEWSLETTER</h1>
@@ -73,9 +72,6 @@ const Footer = () => {
             <FaTwitter  className='hover:text-white'/>
             <FaPinterest  className='hover:text-white'/>
             <FaYoutube   className='hover:text-white'/>
-           {/* <a href='/'>
-          <img src={Logo} className='w-[120px]' alt=''/>
-           </a>  */}
          </div>
           
 
