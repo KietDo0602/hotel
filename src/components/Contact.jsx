@@ -14,15 +14,15 @@ const Contact = () => {
     <div className='w-full h-[400px] bg-secondary relative lg:flex flex-col py-24'>
         <div className='flex  w-full gap-2  px-16 text-white justify-center'>
           <div className='flex flex-col  items-start w-1/3'>
-           <h1 className='font-primary py-2'>NEWSLETTER</h1>
-           <p className='py-3 text-lg'>Subscribe to our Newsletter.</p>
+           <h1 className='font-primary py-2'>Tin Tức</h1>
+           <p className='py-3 text-lg'>Xem thêm thông tin về Khue Le Bleu.</p>
            <form className='flex flex-col gap-4'>
              <input placeholder='Enter Email' className='px-8 py-3 '/>
-             <button className='btn btn-lg btn-secondary py-4'>Subscribe Now</button>
+             <button className='btn btn-lg btn-secondary py-4'>Đăng Ký</button>
            </form>
           </div>
           <div className='lg:w-1/3 w-full'>
-          <h1 className='font-primary py-2'>USEFUL LINKS</h1>
+          <h1 className='font-primary py-2'>TRANG HỮU DỤNG</h1>
           <div className='flex flex-col font-primary'>
             <a href='' className='hover:text-accent transition'>
               Home
@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
           </div>
           <div className='lg:w-1/3 w-full -px-2'>
-            <h1 className='font-primary py-2'>GALLERY</h1>
+            <h1 className='font-primary py-2'>THƯ VIỆN ẢNH</h1>
            <div className='grid grid-rows-3 grid-cols-3 -gap-x-10 gap-2 pr-16'>
               {rooms.slice(0,6).map((room)=>(
                 <img key={room} src={room.image} className='w-20 h-20' alt=''/>

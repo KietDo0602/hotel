@@ -42,46 +42,6 @@ const BlogDetails = () => {
             <img src={image} alt='' className='mb-8'/>
             <h2 className='h2'>{name}</h2>
             <p className='mb-8'>{description}</p>
-            {/*facilities*/}
-            {/*grid*/}
-            <div>
-             <h3 className='h3'>Hotel Rules</h3>
-             <p className='mb-6'>
-              Loren ipsum dolor sit amet consectour adiplising elit.
-              Nihil nulla itaque lavoriaosa
-             </p>
-             <ul className='flex flex-col gap-y-4'>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                Check-in: 3:00 PM- 9:00 PM
-              </li>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                Check-out: 10:30 AM
-              </li>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                 No Pets
-              </li>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                 No Smoking
-              </li>
-             </ul>
-          </div>
-          <div className='w-full h-[540px] lg:py-10'>
-               <form className='flex flex-col gap-4 p-4'>
-                <label htmlFor="" className='text-3xl'>Leave A Comment</label>
-                <div className='flex gap-8'> 
-                  <input type="text" placeholder="Full Name" className='py-4 px-2 w-1/2'/>
-                  <input type="email" placeholder="Email Address" className='py-4 w-1/2'/>
-                </div>
-                <textarea type="text" placeholder="Write Comments" className='py-8'/>
-                <div className='w-1/3'>
-                  <button className='btn btn-secondary btn-lg py-6'>SUBMIT NOW</button>
-                </div>
-              </form>
-           </div>
         </div>
 
 
@@ -89,10 +49,10 @@ const BlogDetails = () => {
          <div className='w-full h-full lg:w-[40%] '>
             {/*reservation*/}
             <div>
-              <input type="text" placeholder='Search Post' />
+              <input type="text" className='px-4 py-2 outline-none' placeholder='Tìm Kiếm' />
             </div>
             <div className='h-48 flex flex-col lg:gap-8'>
-              <h1>Popular Post</h1>
+              <h1 className='pt-20 text-2xl'>Bài viết Phổ Biến</h1>
               {blogs.map((blog)=>(
                 <div className=' lg:flex gap-4' key={blog.id}>
                   <Link to={`/blog/${blog.id}`}>
@@ -101,7 +61,7 @@ const BlogDetails = () => {
 
                    <h1 className='text-accent text-xl py-2 hover:underline'>{blog.name}</h1>
                   <span className='hover:text-white'>
-                     Read More
+                     Đọc Thêm
                   </span>
                    </div>
                    </Link>

@@ -9,20 +9,21 @@ import {BsAlarm, BsCalendar} from 'react-icons/bs'
 const CheckOut = () => {
   const [endDate, setEndDate] = useState(false)
   return( 
-  <div className='relative flex items-center justify-end h-full'>
-      {/*icon*/}
-      <div className='absolute z-10 pr-8'>
-        <div className='block md:hidden lg:block'>
-          <BsCalendar className='text-accent text-base'/>
+    <div className="relative flex items-center h-full w-full">
+      <div className="relative w-full h-full">
+        {/* Icon */}
+        <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+          <BsCalendar className="text-accent text-base" />
         </div>
-      </div>  
-    <DatePicker
-     className='w-full h-full'
-     selected={endDate}
-     placeholderText='Check out'
-     onChange={(date)=>setEndDate(date)}
-     />
-  </div>
+        {/* DatePicker */}
+        <DatePicker
+          className="w-full h-full pl-3 pr-4"
+          selected={endDate}
+          placeholderText="Ngày Trả Phòng"
+          onChange={(date) => setEndDate(date)}
+        />
+      </div>
+    </div>
   )
 };
 

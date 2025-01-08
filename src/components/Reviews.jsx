@@ -66,7 +66,7 @@ const Reviews = () => {
               return (
                <SwiperSlide  className='h-full w-full' key={id}>
                  <div className=' text-white text-center'>
-                   <p className='font-secondary italic text-white lg:text-2xl text-xl'><FaQuoteLeft color='brown' />{description}</p>
+                   <p className='font-secondary italic text-white lg:text-2xl text-xl'><FaQuoteLeft color='gold'/>{description}<FaQuoteRight color='gold'/></p>
                    <div className='flex flex-col items-center py-2'>
                      <img src={img} className='w-24 h-24'/>
                    </div>

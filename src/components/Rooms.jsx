@@ -74,8 +74,8 @@ const Rooms = () => {
        }
       <div className='container mx-auto  lg:px-0 p-4'>
         <div className='text-center text-white'>
-          <div className='font-tertiary uppercase text-[15px] tracking-[6px]'> Royal Hotels </div>
-          <h2 className='font-primary text-[45px] mb-4'>Room & Suites</h2>
+          <div className='font-tertiary uppercase text-[15px] tracking-[6px]'> Khue Le Bleu </div>
+          <h2 className='font-primary text-[45px] mb-4'>Các Phòng</h2>
         </div>
         {/*swiper*/}
         <Swiper 

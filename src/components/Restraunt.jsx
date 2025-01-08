@@ -18,7 +18,6 @@ const Back=()=>{
        <div className='col-span-2 p-8'>
          <div className='grid grid-cols-2 grid-rows-2 gap-4 max-w-lg max-h-sm'>
           {menu.slice(0,6).map((room)=>{
-            console.log(room)
             return <MenuRes room={room} key={room.id}/>
           })}
          </div>

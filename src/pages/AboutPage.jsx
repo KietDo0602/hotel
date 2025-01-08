@@ -139,29 +139,21 @@ const AboutPage = () => {
              {/*overlay*/}
           <div className='absolute w-full h-full bg-black/70 ' ></div>
                  {/*title*/}
-            <h1 className='text-6xl text-white z-20 font-primary text-center'>About Us</h1>
+            <h1 className='text-6xl text-white z-20 font-primary text-center'>Về Chúng Tôi</h1>
          </div>
-       {/* about us */}
+       {/* About */}
       <div>
         <div className='w-full lg:h-screen mt-28 flex flex-col lg:flex-row justify-between mx-auto container '>
          <div className='text-white lg:w-3/4 w-full flex flex-col sm:justify-start justify-start xl:px-12 px-6  lg:text-start text-center'>
-            {/* <h1 className='text-xl text-white z-20 font-primary text-start'>About Us</h1> */}
-            <h1 className='xl:text-6xl text-2xl font-primary py-2'>Luxury<br/> Hotel in The Heart of <br/>San Francisco.</h1>
-            <p className='xl:text-lg text-md'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, cum eveniet ullam commodi voluptas magni voluptatem laboriosam saepe, ea modi, aperiam nihil! Ex ducimus distinctio ut dicta, reiciendis ab aliquid.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae orci sodales Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet odio est. 
+            {/* <h1 className='text-xl text-white z-20 font-primary text-start'>Về Chúng Tôi</h1> */}
+            <h1 className='xl:text-6xl text-2xl font-primary py-2'>Luxury<br/> Villa tại <br/>Đồi Rồng.</h1>
+            <p className='xl:text-lg text-md'> 
+              Villa Khue Le Bleu nằm ở Hải Phòng, Việt Nam, là hiện thân của vẻ đẹp và sự tinh tế. Nằm gần bờ biển Đồ Sơn, villa nhỏ xinh này được truyền cảm hứng từ những ngôi sao xanh biếc, mang đến một không gian độc đáo và sang trọng.
+              Khue Le Bleu không chỉ là nơi ở, mà còn là một trải nghiệm đáng nhớ với dịch vụ xuất sắc. Khách sạn được thiết kế với phong cách cổ điển với nhiều công nghệ hiển đại, kết hợp với những yếu tố thiên nhiên, tạo nên một không gian thư giãn hoàn hảo. Mỗi phòng nghỉ tại đây đều được trang bị tiện nghi cao cấp, từ giường ngủ êm ái đến ban công nhìn ra đường phố Đồi Rồng sắc màu, mang lại cảm giác thoải mái và dễ chịu cho khách hàng.
              </p>
-             <div className='flex flex-col justify-center w-full items-center'>
-              <div className='flex lg:flex-row flex-col lg:gap-24 gap-4 px-4 lg:py-8 py-6'>
-                <img src={ceo} className='p-2 w-28 h-28'/>
-                <div className='flex flex-col justify-center'>
-                   <h1 className='text-2xl'>Mark Austin</h1>
-                   <p>CEO, ROYAL HOTELS</p>
-                </div>
-              </div>
-             </div>
             
          <div className='lg:flex lg:w-1/2 w-full justify-start py-6 px-10 '>
-            <button className='btn btn-lg btn-primary mx-auto'>MAKE A BOOKING</button>
+            <button className='btn btn-lg btn-primary mx-auto'>ĐẶT PHÒNG</button>
          </div>
          </div>
          <div className='flex flex-col items-center border-l border-secondary'>
@@ -182,15 +174,12 @@ const AboutPage = () => {
           <div className='lg:w-1/2 h-[800px] flex flex-col gap-4 items-center justify-center p-8'>
             <div className='flex lg:flex-row flex-col justify-start gap-4'>
                <div className='flex flex-col items-center justify-center'>
-                 <h1 className='text-secondary font-semibold font-primary text-4xl text-center'>World Luxury Hotels Award</h1>
-                 <p className='text-white text-center text-6xl font-bold'>2024</p>
-               </div>
-               <div className='flex justify-center'>
-                 <FaAward color='#a37d4c' size={200}/>
+                 <h1 className='text-accent font-semibold font-primary text-4xl text-center'>Villa Sang Trọng tại</h1>
+                 <p className='text-white text-center text-6xl font-bold'>Đồi Rồng</p>
                </div>
             </div>
             <div className='py-16 align-bottom'>
-              <h1 className='text-accent text-2xl italic font-tertiary text-center'>Best Luxury Hotel In <br/> SAN FRANSISCO</h1>
+              <h1 className='text-accent text-2xl italic font-tertiary text-center'>Đồ Sơn, Hải Phòng</h1>
             </div>
             {/* <div className='w-full h-1/2' style={{backgroundImage:"url('../hotel2.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
 
@@ -221,20 +210,20 @@ const AboutPage = () => {
           <div className='p-4'>
             <div className='flex lg:flex-row flex-col gap-8'>
            <div>
-              <h1 className='text-3xl text-secondary font-primary'>17+</h1>
-              <span className='lg:text-lg font-secondary'>Years of Hospitality</span>
+              <h1 className='text-3xl text-third font-primary'>2+</h1>
+              <span className='lg:text-lg font-secondary'>Năm Kinh Nghiệm</span>
            </div> 
            <div>
-            <h1 className='text-3xl text-secondary font-primary'>80+</h1>
-            <span className='lg:text-lg font-secondary'>Luxurious Rooms</span>
+            <h1 className='text-3xl text-third font-primary'>7</h1>
+            <span className='lg:text-lg font-secondary'>Phòng Sang Trọng</span>
            </div>
            <div>
-             <h1 className='text-3xl text-secondary font-primary'>57+</h1>
-             <span className='lg:text-lg font-secondary'>Dedicated Staff Members</span>
+             <h1 className='text-3xl text-third fon-primary'>2+</h1>
+             <span className='lg:text-lg font-secondary'>Nhân Viên</span>
            </div>
            <div>
-             <h1 className='text-3xl text-secondary'>21+</h1>
-             <span className='lg:text-lg font-secondary'>Awards and Accolades</span>
+             <h1 className='text-3xl text-third'>5⭐</h1>
+             <span className='lg:text-lg font-secondary'>Hài Lòng Khách Hàng</span>
            </div>
             </div> 
           </div>
@@ -243,41 +232,41 @@ const AboutPage = () => {
 
         {/*TEAMS*/}
 
-        <div className='w-full lg:h-[600px] h-[900px] container mx-auto '>
-            <div className='w-full flex flex-col items-start px-28 justify-center bg-primary py-12'>
-              {/* <img src={Logo} className='w-28 h-28 opacity-80 '/> */}
-              <h1 className='text-accent text-2xl'></h1>
-              <p className='w-1/2 text-start py-4 text-white text-xl'></p>
-             </div>
-            <div className='flex flex-col items-center'>
-               <div className='w-full flex flex-col items-center px-28 justify-center  py-12'>
-                 {/* <img src={Logo} className='w-28 h-28 opacity-80 '/> */}
-                   <h1 className='text-accent text-3xl font-bold text-center font-primary'>OUR TEAMS</h1>
-                  <p className='lg:w-1/2 w-full text-center py-4 text-white text-xl'>Staff members at Royal Hotels</p>
-                </div>
-                <div className='px-4'> 
-                <div style={isMidMobile ? grid2ContainerStyle : gridContainerStyle} className='mt-2 w-full flex flex-col justify-end xl:px-4'>
-                  {
-                    teamList.slice(0,6).map((item)=>(
-                    <div key={item.id} data-aos="zoom-in-down" style={{ ...gridItemStyle, gridArea: `${item.id}`}} className='shadow-xl hover:scale-110 transition-all duration-300 flex flex-col items-center'>
-                       <img src={item.icon} className='w-full h-auto overflow-hidden '/>
-                       <span className='lg:text-xl text-accent text-center'>{item.name}</span>
-                       <p className='text-accent p-2'>{item.title}</p>
-                    </div>
-                     ))
-                   }
-                </div>
-              </div> 
-              </div>  
-        </div>
+        {/* <div className='w-full lg:h-[600px] h-[900px] container mx-auto '> */}
+        {/*     <div className='w-full flex flex-col items-start px-28 justify-center bg-primary py-12'> */}
+        {/*       {/1* <img src={Logo} className='w-28 h-28 opacity-80 '/> *1/} */}
+        {/*       <h1 className='text-accent text-2xl'></h1> */}
+        {/*       <p className='w-1/2 text-start py-4 text-white text-xl'></p> */}
+        {/*      </div> */}
+        {/*     <div className='flex flex-col items-center'> */}
+        {/*        <div className='w-full flex flex-col items-center px-28 justify-center  py-12'> */}
+        {/*          {/1* <img src={Logo} className='w-28 h-28 opacity-80 '/> *1/} */}
+        {/*            <h1 className='text-accent text-3xl font-bold text-center font-primary'>OUR TEAMS</h1> */}
+        {/*           <p className='lg:w-1/2 w-full text-center py-4 text-white text-xl'>Staff members at Royal Hotels</p> */}
+        {/*         </div> */}
+        {/*         <div className='px-4'> */} 
+        {/*         <div style={isMidMobile ? grid2ContainerStyle : gridContainerStyle} className='mt-2 w-full flex flex-col justify-end xl:px-4'> */}
+        {/*           { */}
+        {/*             teamList.slice(0,6).map((item)=>( */}
+        {/*             <div key={item.id} data-aos="zoom-in-down" style={{ ...gridItemStyle, gridArea: `${item.id}`}} className='shadow-xl hover:scale-110 transition-all duration-300 flex flex-col items-center'> */}
+        {/*                <img src={item.icon} className='w-full h-auto overflow-hidden '/> */}
+        {/*                <span className='lg:text-xl text-accent text-center'>{item.name}</span> */}
+        {/*                <p className='text-accent p-2'>{item.title}</p> */}
+        {/*             </div> */}
+        {/*              )) */}
+        {/*            } */}
+        {/*         </div> */}
+        {/*       </div> */} 
+        {/*       </div> */}  
+        {/* </div> */}
 
         {/* Reviews */}
 
       <div className='container mx-auto'>
       <div className='pt-28'>
         <div className='py-4'>
-          <h2 className='text-accent'>Customer Reviews</h2>
-          <h1 className='text-white text-4xl'>Royal Client's feedback <br/> about services</h1>
+          <h2 className='text-accent'>Phản Hồi Khách Hàng</h2>
+          <h1 className='text-white text-4xl'>Phản hồi khách hàng <br/> về dịch vụ.</h1>
         </div>
       <Swiper {...swiperParams}  modules={[EffectFade, Autoplay, Pagination]}>
          {slides.map((slide) => {

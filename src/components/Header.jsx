@@ -1,11 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import LogoWhite from '../assets/img/logo-white.svg'
-import LogoDark from '../assets/img/logo-dark.svg'
-import Logo from '../assets/img/logo2Dark.svg'
-import { BsMenuAppFill } from 'react-icons/bs';
+import { Logo } from '../assets';
 import { CgMenuGridO } from "react-icons/cg";
 import { IoCloseOutline } from "react-icons/io5";
-import {GrMenu } from 'react-icons/gr';
 import { SlArrowDown } from "react-icons/sl";
 
 
@@ -38,14 +34,14 @@ const Header = () => {
          {/* nav */}
          <nav className={`${header ? 'text-white' : 'text-white'} lg:flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8 hidden lg:block`}>
            <a href='/' className='hover:text-accent transition'>
-            Home
+             Trang Chủ
            </a>
            <a href='/about' className='hover:text-accent transition'>
-            About Us  
+             Về Chúng Tôi
            </a>
            <div className='flex gap-x-1 group relative'>
             <a href='/rooms' className='hover:text-accent transition'>
-              Rooms   
+              Các Phòng   
             </a>
             <a className='py-1 cursor-pointer'>
                <SlArrowDown size={10} className='group-hover:text-accent' />
@@ -53,10 +49,10 @@ const Header = () => {
             <div className=" absolute bg-secondary w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className='flex flex-col gap-2'>
                    <a href='/rooms' className='hover:text-accent transition'>
-                   Rooms   
+                    Phòng   
                   </a>
                   <a href='/room/1' className='hover:text-accent transition'>
-                    Rooms Details   
+                    Thông Tin Phòng   
                   </a>
                 </div>
                </div>
@@ -75,13 +71,13 @@ const Header = () => {
                    Blog   
                   </a>
                   <a href='/blog/1' className='hover:text-accent transition'>
-                    Blog Details   
+                    Thông Tin Blog   
                   </a>
                 </div>
              </div>
            </div>
            <a href='/contact' className='hover:text-accent transition'>
-            Contact
+            Liên Hệ
            </a>
          </nav>
 
@@ -94,16 +90,16 @@ const Header = () => {
            < IoCloseOutline size={20} onClick={()=>setOpenMenu(!openMenu)} className='hover:rotate-90 transition-all duration-300'/>
             </div>
             <a href='/' className='hover:text-accent transition'>
-             Home
+             Trang Chủ
             </a>
             <a href='/about' className='hover:text-accent transition'>
-             About Us
+             Về Chúng Tôi
             </a>
               
             <div className=' group relative'>
                <div className='flex gap-x-1'>
                 <a href='/rooms' className='hover:text-accent transition'>
-                  Rooms   
+                  Các Phòng   
                 </a>
                  <a className='py-1 cursor-pointer'>
                    <SlArrowDown size={10} className='hover:text-accent  hover:rotate-90 transition-all duration-300' />
@@ -112,10 +108,10 @@ const Header = () => {
               <div className=" bg-secondary h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-0 right-20 hidden group-hover:block transition-opacity duration-300">
                   <div className='flex flex-col gap-2'>
                      <a href='/rooms' className='hover:text-accent transition'>
-                      Rooms   
+                      Phòng   
                      </a>
                     <a href='/room/1' className='hover:text-accent transition'>
-                      Rooms Details   
+                      Thông Tin Phòng   
                     </a>
                   </div>
                </div>
@@ -137,7 +133,7 @@ const Header = () => {
                     Blog   
                    </a>
                    <a href='/blog/1' className='hover:text-accent transition w-full'>
-                     Blog Details   
+                     Thông Tin Blog   
                   </a>
                  </div>
               </div>
@@ -145,7 +141,7 @@ const Header = () => {
 
 
             <a href='/contact' className='hover:text-accent transition'>
-             Contact
+             Liên Hệ
             </a>
           </nav>
         }

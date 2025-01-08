@@ -35,19 +35,19 @@ AOS.init({
 
 const slides =[
   {
-    title:'The Luxury Destination',
+    title:'Chào Mừng đến với Khue Le Bleu',
     bg:Img1,
-    btnText:'Book Online'
+    btnText:'Đặt Phòng'
   },
   {
-    title:'The Luxury Destination',
+    title:'Khám Phá Đồi Rồng',
     bg:Img2,
-    btnText:'Book Online'
+    btnText:'Khám Phá'
   },
   {
-    title:'The Luxury Destination',
+    title:'Điểm Đến Lý Tưởng',
     bg:Img3,
-    btnText:'Book Online'
+    btnText:'Đặt Phòng'
   }
 ]
 
@@ -86,7 +86,7 @@ const HeroSlider = () => {
       return(
         <SwiperSlide ref={parallax.ref} className='h-full flex justify-center items-center' key={index}>
          <div className='z-20 text-white text-center'>
-          <div className='uppercase font-tertiary tracking-[6px] lg:mb-5 mb-3'>Come and Enjoy</div>
+          <div className='uppercase font-tertiary tracking-[6px] lg:mb-5 mb-3'>Đến Và Tận Hưởng</div>
           <h1 className='text-[24px] font-primary uppercase tracking-[2px]
           max-w-[920px] lg:text-[68px] leading-tight lg:mb-6 mb-3'>
             {title}

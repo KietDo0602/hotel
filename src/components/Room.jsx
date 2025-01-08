@@ -41,7 +41,7 @@ const Room = ({room}) => {
               <BsPeople className='text-[18px]'/>
              </div>
              <div className='flex gap-x-1 text-white '>
-               <div>Max People</div>
+               <div>Tối Đa</div>
                <div>{maxPerson}</div>
              </div>
           </div>
@@ -57,7 +57,7 @@ const Room = ({room}) => {
       </div>
 
       {/*btn*/}
-      <Link className='btn btn-secondary btn-sm max-w-[240px] mx-auto' to={`/room/${id}`}>Book now from ${price}</Link>
+      <Link className='btn btn-secondary btn-sm max-w-[240px] mx-auto' to={`/room/${id}`}>Đặt từ ${price}</Link>
     </div>
   ) 
 };

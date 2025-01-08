@@ -21,7 +21,7 @@ const RoomsPage = () => {
              {/*overlay*/}
           <div className='absolute w-full h-full bg-black/70 ' ></div>
                  {/*title*/}
-            <h1 className='text-6xl text-white z-20 font-primary text-center'>The Rooms</h1>
+            <h1 className='text-6xl text-white z-20 font-primary text-center'>Các Phòng</h1>
          </div>
        {/*overlay & spinner*/}
        {loading && (
@@ -32,8 +32,8 @@ const RoomsPage = () => {
        }
       <div className='container mx-auto lg:px-0 p-4 '>
         <div className='text-center '>
-          <div className='font-tertiary uppercase text-[15px] tracking-[6px] text-accent'>ROYAL HOTELS</div>
-          <h2 className='font-primary text-[45px] mb-4 text-white'>Room & Suites</h2>
+          <div className='font-tertiary uppercase text-[15px] tracking-[6px] text-accent'>KHUE LE BLEU</div>
+          <h2 className='font-primary text-[45px] mb-4 text-white'>Phòng</h2>
         </div>
         {/*grid*/}
         <div className='grid grid-cols-1 max-w-xl mx-auto gap-[30px] 

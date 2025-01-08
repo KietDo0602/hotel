@@ -32,7 +32,7 @@ const RoomDetails = () => {
 
       {/*title*/}
       <h1 className='text-6xl text-accent z-20 font-primary text-center'>
-        {name} Details
+        {name}
       </h1>
     </div>
     <div className='container mx-auto text-accent '>
@@ -44,9 +44,9 @@ const RoomDetails = () => {
             <img src={imageLg} alt='' className='mb-8'/>
             {/*facilities*/}
             <div className='mt-12'>
-              <h3 className='h3 mb-3'>Room facilities</h3>
+              <h3 className='h3 mb-3'>Tiện Nghi Phòng</h3>
               <p className='mb-12'>
-                Loren ipsum dolor ist vlckakj dksjsj
+                Đây là những tiện nghi và dịch vụ Khue Le Bleu hỗ trợ. Hãy liên lạc với lễ tân nếu cần bất kì dịch vụ hay thắc mắc nào.
               </p> 
             </div>
             {/*grid*/}
@@ -68,7 +68,7 @@ const RoomDetails = () => {
             {/*reservation*/}
           <div className='py-8 px-6 bg-accent/20 mb-12'>
               <div className='flex flex-col space-y-4 mb-4'>
-                <h3>Your Reservation</h3>
+                <h3>Đặt Phòng</h3>
                 <div className='h-[60px]'>
                   <CheckIn/>
                 </div>
@@ -83,32 +83,35 @@ const RoomDetails = () => {
                 </div>
               </div>
               <button className='btn btn-lg btn-primary w-full'>
-                book now for ${price}
+                Kiểm Tra Giá Phòng
               </button>
          </div>
           {/*rules*/}
           <div>
-             <h3 className='h3'>Hotel Rules</h3>
+             <h3 className='h3'>Luật</h3>
              <p className='mb-6'>
-              Loren ipsum dolor sit amet consectour adiplising elit.
-              Nihil nulla itaque lavoriaosa
+               Tại Khue Le Bleu, chúng tôi đề cao sự thoải mái và an toàn của mọi khách hàng. 
+               Quý khách vui lòng tuân thủ các quy định của khách sạn như không hút thuốc trong 
+               phòng, giữ gìn vệ sinh chung và tuân thủ giờ giấc quy định. Mọi thắc mắc hoặc yêu 
+               cầu hỗ trợ, xin vui lòng liên hệ quầy lễ tân để được phục vụ kịp thời. Chúng tôi 
+               luôn sẵn sàng giúp đỡ quý khách!
              </p>
              <ul className='flex flex-col gap-y-4'>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>
-                Check-in: 3:00 PM- 9:00 PM
+                Giờ Nhận Phòng: 3:00 PM- 9:00 PM
               </li>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>
-                Check-out: 10:30 AM
+                Giờ Trả Phòng: 12:00 AM
               </li>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>
-                 No Pets
+                 Không Thú Nuôi (Liên Hệ trước nếu cần thiết)
               </li>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>
-                 No Smoking
+                 Không Hút Thuốc Trong Nhà
               </li>
              </ul>
           </div>

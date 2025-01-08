@@ -8,11 +8,12 @@ import {Menu} from '@headlessui/react'
 import { BsChevronDown } from 'react-icons/bs';
 
 const lis = [
-  {name: '0 Kids'},
-  {name: '1 Kids'},
-  {name: '2 Kids'},
-  {name: '3 Kids'},
-  {name: '4 Kids'}
+  {name: '0 Trẻ Em'},
+  {name: '1 Trẻ Em'},
+  {name: '2 Trẻ Em'},
+  {name: '3 Trẻ Em'},
+  {name: '4 Trẻ Em'},
+  {name: '5 Trẻ Em'},
 ]
 
 const KidsDropdown = () => {
@@ -21,7 +22,7 @@ const KidsDropdown = () => {
     <Menu as='div' className='w-full h-full bg-white relative'>
       {/*btn*/}
        <Menu.Button className='w-full h-full flex items-center justify-between px-8'>
-         {kids === '0 Kids' ? 'No kids' : kids}
+         {kids === '0 Trẻ Em' ? 'Không Trẻ Em' : kids}
          <BsChevronDown className='text-base text-accent-hover'/>
        </Menu.Button>
        {/*items*/}

@@ -25,7 +25,7 @@ const BookForm = () => {
        {/*btn*/}
        <button
        onClick={(e)=>handleClick(e)}
-       type='submit' className='btn btn-primary'>Check now</button>
+       type='submit' className='btn btn-primary'>KIỂM TRA</button>
      </div>
     </form>
     )

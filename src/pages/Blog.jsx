@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom'
 // import gym from '../assets/gym.jpg'
 // import hotel2 from '../assets/hotel2.jpg'
@@ -51,9 +52,9 @@ const Blog = () => {
                        <img src={blog.image} className='lg:w-96 w-64  lg:h-96 h-64 hover:scale-110 transition-all duration-300 cursor-pointer'/>
                        <div className=' text-accent flex flex-col cursor-pointer'>
                        <h1 className='text-accent text-xl py-2 hover:underline'>{blog.name}</h1>
-                       <span  className='hover:text-white'>
-                        Read More
-                       </span>
+                       <div className='hover:text-white font-tertiary flex items-center'>
+                         Đọc Thêm  <FaArrowRight/>
+                       </div>
                     </div>
                     </Link>
                     </div>
@@ -80,7 +81,7 @@ const Blog = () => {
                     <input type="text" placeholder='Search Posts' className='p-1 outline-none' />
                   </div>     
                   <div className='w-full h-screen flex flex-col text-accent space-y-4 py-8'>
-                    <h1 className='text-2xl'>Popular Posts</h1>
+                    <h1 className='text-2xl'>Bài viết Phổ Biến</h1>
                      {blogs.map((blog)=>(
                       <>
                         <Link to={`/blog/${blog.id}`}>
