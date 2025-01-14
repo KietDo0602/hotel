@@ -17,26 +17,26 @@ import 'swiper/css/scrollbar';
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 
-const slides =[
+const slides = [
   { 
     id:1,
-    title:"A Regal Experience Beyond Expectations!",
-    description:'The amenities at Royal Hotels are truly top-notch. The spa offered a rejuvenating escape, and the fine dining restaurant served exquisite cuisine that surpassed my expectations. The attention to detail, impeccable service, and overall opulence of this 5-star establishment truly set it apart. If you are seeking an unforgettable and regal experience, look no further than Royal Hotels!',
+    title:"Phi Long",
+    description:'Khue Le Bleu Villa có vị trí đẹp, gần các điểm vui chơi ở Đồi Rồng. Nhân viên thân thiện và phục vụ chu đáo. Phòng khách thoáng đãng, sáng sủa.',
     img:prof1
   },
   { 
     id:2,
-    title:"A Regal Experience Beyond Expectations!",
-    description:'Royal Hotels strikes the perfect balance between luxury and comfort, making it an ideal choice for those seeking a truly indulgent getaway. I cannot wait to return to this haven of sophistication and relaxation.',
+    title:"Trần Hải",
+    description:'Khue Le Bleu Villa tuy nhỏ nhưng rất đẹp và sạch sẽ. Nhân viên rất thân thiện và hỗ trợ tốt. Không gian sang trọng, thích hợp cho du khách muốn tìm kiếm sự yên tĩnh.',
     img:prof2
   },
   {
     id:3,
-    title:"Unparalleled Service and Unforgettable Memories",
-    description:'Whether you are looking for a romantic getaway or a luxurious escape, Royal Hotels delivers on every front. The seamless blend of opulence and warmth makes it a standout choice for those who appreciate the finer things in life. I wholeheartedly recommend Royal Hotels for an unparalleled experience that exceeds expectations.',
+    title:"Linh Hoang",
+    description:'Phòng ốc sạch sẽ mà giá lại hạt dẻ. Nhân viên dễ thương, nhiệt tình lắm. Mình ở 2 ngày mà thấy thoải mái như ở nhà luôn. Sẽ quay lại nếu có dịp!',
     img:prof3
   }
-]
+];
 
 
 const swiperParams = {
@@ -61,14 +61,25 @@ const Reviews = () => {
      <div className='container mx-auto'>
       <Swiper {...swiperParams}  modules={[EffectFade, Autoplay, Pagination]}>
          {slides.map((slide) => {
-                //destructure slide
-            const {id,img, title, description}= slide;
+               //destructure slide
+              const {id, title, description} = slide;
+
               return (
                <SwiperSlide  className='h-full w-full' key={id}>
                  <div className=' text-white text-center'>
-                   <p className='font-secondary italic text-white lg:text-2xl text-xl'><FaQuoteLeft color='gold'/>{description}<FaQuoteRight color='gold'/></p>
+
+                  <div className='quote-container' style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative' }}>
+                    <FaQuoteLeft color='gold'/>
+                    <p className='font-secondary italic text-white lg:text-2xl text-xl'>
+                      {description}
+                    </p>
+                    <div style={{ alignSelf: 'flex-end', marginTop: 'auto' }}>
+                      <FaQuoteRight color='gold'/>
+                    </div>
+                  </div>
+
                    <div className='flex flex-col items-center py-2'>
-                     <img src={img} className='w-24 h-24'/>
+                     <p>{title}</p>
                    </div>
                 
                  </div>

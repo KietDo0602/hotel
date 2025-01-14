@@ -50,10 +50,29 @@ import {
   TbFridge,
 } from "react-icons/tb";
 
+export function generateBookingLink(checkinDate, checkoutDate, adults, children) {
+  // Example usage
+  // const checkinDate = '2025-03-20';
+  // const checkoutDate = '2025-03-25';
+  // const adults = 2;
+  // const children = 1;
+  const baseURL = `https://www.booking.com/hotel/`;
+  const params = new URLSearchParams({
+    checkin: checkinDate,
+    checkout: checkoutDate,
+    group_adults: adults,
+    group_children: children
+  });
+
+  return `${baseURL}khue-le-bleu-villa.vi.html?${params.toString()}`;
+}
+
+
 export const roomData = [
   {
     id: 1,
     name: 'Phòng 201',
+    short: 'Phòng view thành phố sắc màu với 1 giường cỡ king và 1 giường đơn',
     description:
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
@@ -79,6 +98,7 @@ export const roomData = [
   {
     id: 2,
     name: 'Phòng 202',
+    short: 'Phòng view thành phố sắc màu với giường cỡ king rộng rãi, thoáng mát',
     description:
       'Phòng với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
@@ -104,6 +124,7 @@ export const roomData = [
   {
     id: 3,
     name: 'Phòng 301',
+    short: 'Phòng view thành phố sắc màu với 1 giường cỡ king và 1 giường đơn',
     description:
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường, mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
@@ -129,6 +150,7 @@ export const roomData = [
   {
     id: 4,
     name: 'Phòng 302',
+    short: 'Phòng view thành phố sắc màu với giường cỡ king rộng rãi, thoáng mát',
     description:
       'Phòng rộng rãi với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
@@ -154,8 +176,9 @@ export const roomData = [
   {
     id: 5,
     name: 'Phòng 401',
+    short: 'Phòng view thành phố sắc màu với 1 giường cỡ king và 1 giường đơn',
     description:
-      'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
+      'Phòng rộng rãi với một giường cỡ king và một giường thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
@@ -179,6 +202,7 @@ export const roomData = [
   {
     id: 6,
     name: 'Phòng 402',
+    short: 'Phòng view thành phố sắc màu với giường cỡ king rộng rãi, thoáng mát',
     description:
       'Phòng thoáng mát với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
@@ -204,6 +228,7 @@ export const roomData = [
   {
     id: 7,
     name: 'Phòng 501',
+    short: 'Phòng view thành phố sắc màu với 1 giường cỡ king và 1 giường đơn',
     description:
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [

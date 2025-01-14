@@ -19,7 +19,7 @@ import "aos/dist/aos.css";
 import { teamList } from '../data'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectFade, Autoplay, Pagination} from 'swiper'
-import { FaMedal, FaQuoteLeft } from 'react-icons/fa6'
+import { FaQuoteRight, FaQuoteLeft } from 'react-icons/fa6'
 import { FaAward } from "react-icons/fa6";
 // Import Swiper styles
 import 'swiper/css';
@@ -38,26 +38,23 @@ AOS.init({
   
 });
 
-const slides =[
+const slides = [
   { 
     id:1,
-    title:"A Regal Experience Beyond Expectations!",
-    description:'The amenities at Royal Hotels are truly top-notch. The spa offered a rejuvenating escape, and the fine dining restaurant served exquisite cuisine that surpassed my expectations.',
-    
+    title:"Phi Long",
+    description:'Khue Le Bleu Villa có vị trí đẹp, gần các điểm vui chơi ở Đồi Rồng. Nhân viên thân thiện và phục vụ chu đáo. Phòng khách thoáng đãng, sáng sủa.',
   },
   { 
     id:2,
-    title:"A Regal Experience Beyond Expectations!",
-    description:'Royal Hotels strikes the perfect balance between luxury and comfort, making it an ideal choice for those seeking a truly indulgent getaway. I cannot wait to return to this haven of sophistication and relaxation.',
-    
+    title:"Trần Hải",
+    description:'Khue Le Bleu Villa tuy nhỏ nhưng rất đẹp và sạch sẽ. Nhân viên rất thân thiện và hỗ trợ tốt. Không gian sang trọng, thích hợp cho du khách muốn tìm kiếm sự yên tĩnh.',
   },
   {
     id:3,
-    title:"Unparalleled Service and Unforgettable Memories",
-    description:'Whether you are looking for a romantic getaway or a luxurious escape, Royal Hotels delivers on every front. The seamless blend of opulence and warmth makes it a standout choice for those who appreciate the finer things in life.',
-    
+    title:"Linh Hoang",
+    description:'Phòng ốc sạch sẽ mà giá lại hạt dẻ. Nhân viên dễ thương, nhiệt tình lắm. Mình ở 2 ngày mà thấy thoải mái như ở nhà luôn. Sẽ quay lại nếu có dịp!',
   }
-]
+];
 
 
 
@@ -149,11 +146,10 @@ const AboutPage = () => {
             <h1 className='xl:text-6xl text-2xl font-primary py-2'>Luxury<br/> Villa tại <br/>Đồi Rồng.</h1>
             <p className='xl:text-lg text-md'> 
               Villa Khue Le Bleu nằm ở Hải Phòng, Việt Nam, là hiện thân của vẻ đẹp và sự tinh tế. Nằm gần bờ biển Đồ Sơn, villa nhỏ xinh này được truyền cảm hứng từ những ngôi sao xanh biếc, mang đến một không gian độc đáo và sang trọng.
-              Khue Le Bleu không chỉ là nơi ở, mà còn là một trải nghiệm đáng nhớ với dịch vụ xuất sắc. Khách sạn được thiết kế với phong cách cổ điển với nhiều công nghệ hiển đại, kết hợp với những yếu tố thiên nhiên, tạo nên một không gian thư giãn hoàn hảo. Mỗi phòng nghỉ tại đây đều được trang bị tiện nghi cao cấp, từ giường ngủ êm ái đến ban công nhìn ra đường phố Đồi Rồng sắc màu, mang lại cảm giác thoải mái và dễ chịu cho khách hàng.
              </p>
             
          <div className='lg:flex lg:w-1/2 w-full justify-start py-6 px-10 '>
-            <button className='btn btn-lg btn-primary mx-auto'>ĐẶT PHÒNG</button>
+           <button className='btn btn-lg btn-primary mx-auto hover:text-accent'>Đặt Phòng</button>
          </div>
          </div>
          <div className='flex flex-col items-center border-l border-secondary'>
@@ -271,16 +267,19 @@ const AboutPage = () => {
       <Swiper {...swiperParams}  modules={[EffectFade, Autoplay, Pagination]}>
          {slides.map((slide) => {
                 //destructure slide
-            const {id,img, title, description}= slide;
+            const {id,title, description}= slide;
               return (
-               <SwiperSlide  className='h-full w-full bg-secondary' key={id}>
-                 <div className=' text-white text-center p-4'>
-                   <p className='font-secondary italic text-black lg:text-2xl text-xl'><FaQuoteLeft className='text-accent' />{description}</p>
-                   <div className='flex flex-col items-center py-2'>
-                    
-                   </div>
-                
-                 </div>
+               <SwiperSlide  className='h-full w-full p-4 text-center bg-secondary' key={id}>
+                  <div className='quote-container' style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative' }}>
+                    <FaQuoteLeft  className="text-accent"/>
+                    <p className='font-secondary italic text-white lg:text-2xl text-xl'>
+                      {description}
+                    </p>
+                    <div style={{ alignSelf: 'flex-end', marginTop: 'auto' }}>
+                      <FaQuoteRight className="text-accent"/>
+                    </div>
+                    <p className="text-white">{title}</p>
+                  </div>
                </SwiperSlide>
                  )
                })}

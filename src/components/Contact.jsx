@@ -17,7 +17,7 @@ const Contact = () => {
            <h1 className='font-primary py-2'>Tin Tức</h1>
            <p className='py-3 text-lg'>Xem thêm thông tin về Khue Le Bleu.</p>
            <form className='flex flex-col gap-4'>
-             <input placeholder='Enter Email' className='px-8 py-3 '/>
+             <input placeholder='Enter Email' className='px-3 py-4 text-black'/>
              <button className='btn btn-lg btn-secondary py-4'>Đăng Ký</button>
            </form>
           </div>

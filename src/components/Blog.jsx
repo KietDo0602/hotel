@@ -63,8 +63,8 @@ const Blog = () => {
       {...swiperParams} 
       modules={[Autoplay, Pagination, Navigation]} 
       style={{
-        "--swiper-pagination-color": "gold",
-        "--swiper-pagination-bullet-inactive-color": "gray",
+        "--swiper-pagination-color": "#126aa0",
+        "--swiper-pagination-bullet-inactive-color": "grey",
         "--swiper-pagination-bullet-inactive-opacity": "1",
       }}
     >

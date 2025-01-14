@@ -74,13 +74,19 @@ const Rooms = () => {
        }
       <div className='container mx-auto  lg:px-0 p-4'>
         <div className='text-center text-white'>
-          <div className='font-tertiary uppercase text-[15px] tracking-[6px]'> Khue Le Bleu </div>
+          <div className='font-tertiary uppercase text-accent text-[15px] tracking-[6px]'> Khue Le Bleu</div>
           <h2 className='font-primary text-[45px] mb-4'>Các Phòng</h2>
         </div>
         {/*swiper*/}
         <Swiper 
-     
-        {...swiperParams}  modules={[Autoplay, Pagination, Navigation]}>
+          {...swiperParams} 
+          modules={[Autoplay, Pagination, Navigation]} 
+          style={{
+            "--swiper-pagination-color": "#126aa0",
+            "--swiper-pagination-bullet-inactive-color": "grey",
+            "--swiper-pagination-bullet-inactive-opacity": "1",
+          }}
+        >
            {rooms.map((room)=>(
             <SwiperSlide key={room.id}>
                 <Room room={room} key={room.id}/>

@@ -79,8 +79,8 @@ const Facilities = () => {
             </div>
             <div className='lg:w-1/2' data-aos="zoom-in" >
               <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                <h1 className='text-left text-3xl text-white font-secondary p-8'>Quán Cà Phê</h1>
-                  <p className='max-w-lg p-8 font-secondary text-accent text-center'>
+                <h1 className='text-left text-3xl text-accent font-secondary p-8'>Quán Cà Phê</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center'>
                     Quán cà phê nhỏ KhueLeBleu Café nằm ngay dưới khách sạn Khue Le Bleu tại Hải Phòng là một nơi lý tưởng để 
                     thưởng thức thức uống đầy hương vị. Gần bờ biển, quán cà phê mang đến không gian thoáng đãng, với chỗ ngồi 
                     ngoài trời rộng rãi, sẽ mang đến những trải nghiệm uống cà phê tuyệt vời.
@@ -91,8 +91,8 @@ const Facilities = () => {
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' data-aos="zoom-in">
                <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4   hover:scale-110 transition-all duration-300' > 
-                 <h1 className='text-left text-3xl text-white  font-secondary p-8'>Ăn Sáng</h1>
-                  <p className='max-w-lg p-8 font-secondary text-accent text-center'>
+                 <h1 className='text-left text-3xl text-accent font-secondary p-8'>Ăn Sáng</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center'>
                     Tại Khue Le Bleu, bữa sáng trở thành một trải nghiệm gọn gàng với nhiều lựa chọn hấp dẫn mà khách hàng phải 
                     chọn trước. Từ các món ăn địa phương như bún cá cay hải phòng, phở, bánh mì cho đến các bữa ăn quốc tế như mì ý, 
                     khách hàng sẽ được trải nghiệm một bữa sáng tuyệt vời được phục vụ tận tình, đảm bảo mọi khẩu vị đều được thỏa mãn.
@@ -115,8 +115,8 @@ const Facilities = () => {
             </div>
             <div className='lg:w-1/2' data-aos="zoom-in"  >
               <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                 <h1 className='text-left text-3xl text-white font-secondary p-8'>Bếp & Phòng Ăn</h1>
-                  <p className='max-w-lg font-secondary text-accent text-center'>
+                 <h1 className='text-left text-3xl text-accent font-secondary p-8'>Bếp & Phòng Ăn</h1>
+                  <p className='max-w-lg font-secondary text-white text-center'>
                     Khue Le Bleu còn mang đến tiện ích độc đáo với nhà bếp trên tầng năm, nơi khách hàng có thể đặt trước để sử dụng. 
                     Đây là không gian lý tưởng để tự tay chuẩn bị những bữa ăn ngon lành với đầy đủ dụng cụ và thiết bị hiện đại,
                     mang lại cảm giác như ở nhà. Ngoài ra, tại sân sau của khách sạn, khách hàng có thể tận hưởng những buổi tiệc n
@@ -128,8 +128,8 @@ const Facilities = () => {
           <div className='flex lg:flex-row flex-col justify-between'>
             <div className='lg:w-1/2' data-aos="zoom-in">
                <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                 <h1 className='text-left text-3xl text-white  font-secondary p-8'>Trò Chơi & Karaoke</h1>
-                  <p className='max-w-lg p-8 font-secondary  text-accent text-center'>
+                 <h1 className='text-left text-3xl text-accent font-secondary p-8'>Trò Chơi & Karaoke</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center'>
                     Khue Le Bleu mang đến nhiều lựa chọn giải trí hấp dẫn với kho game PS4 đa dạng, các trò chơi board game như cờ vua, poker, cờ tướng,
                     và dịch vụ karaoke hiện đại. Khách hàng có thể thỏa sức vui chơi cùng bạn bè và gia đình trong không gian thoải mái, thư giãn. 
                     Từ các tựa game PS4 đình đám, những cuộc thi board game kịch tính, đến những giờ phút hát karaoke sôi động, Khue Le Bleu
@@ -156,8 +156,8 @@ const Facilities = () => {
              <div className='flex lg:flex-row flex-col  justify-between'>
                <div className='lg:w-1/2' data-aos="zoom-in" >
               <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                <h1 className='text-left text-lg text-white font-secondary p-8'>Quán Cà Phê</h1>
-                  <p className='max-w-lg p-8 font-secondary text-accent text-center'>
+                <h1 className='text-left text-lg text-accent font-secondary p-8'>Quán Cà Phê</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center'>
                     Quán cà phê nhỏ KhueLeBleu Café nằm ngay dưới khách sạn Khue Le Bleu tại Hải Phòng là một nơi lý tưởng để 
                     thưởng thức thức uống đầy hương vị. Gần bờ biển, quán cà phê mang đến không gian thoáng đãng, với chỗ ngồi 
                     ngoài trời rộng rãi, sẽ mang đến những trải nghiệm uống cà phê tuyệt vời.
@@ -171,8 +171,8 @@ const Facilities = () => {
              <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' data-aos="zoom-in">
                <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4   hover:scale-110 transition-all duration-300' > 
-                 <h1 className='text-left text-lg text-white  font-secondary p-8'>Ăn Sáng</h1>
-                  <p className='max-w-lg p-8 font-secondary text-accent text-center'>
+                 <h1 className='text-left text-lg text-accent font-secondary p-8'>Ăn Sáng</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center'>
                     Tại Khue Le Bleu, bữa sáng trở thành một trải nghiệm gọn gàng với nhiều lựa chọn hấp dẫn mà khách hàng phải 
                     chọn trước. Từ các món ăn địa phương như bún cá cay hải phòng, phở, bánh mì cho đến các bữa ăn quốc tế như mì ý, 
                     khách hàng sẽ được trải nghiệm một bữa sáng tuyệt vời được phục vụ tận tình, đảm bảo mọi khẩu vị đều được thỏa mãn.
@@ -189,8 +189,8 @@ const Facilities = () => {
              <div className='flex lg:flex-row flex-col  justify-between'>
              <div className='lg:w-1/2' data-aos="zoom-in"  >
                 <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                  <h1 className='text-left text-lg text-white font-secondary p-8'>Bếp & Phòng Ăn</h1>
-                  <p className='max-w-lg font-secondary text-accent text-center'>
+                  <h1 className='text-left text-lg text-accent font-secondary p-8'>Bếp & Phòng Ăn</h1>
+                  <p className='max-w-lg font-secondary text-white text-center'>
                     Khue Le Bleu còn mang đến tiện ích độc đáo với nhà bếp trên tầng năm, nơi khách hàng có thể đặt trước để sử dụng. 
                     Đây là không gian lý tưởng để tự tay chuẩn bị những bữa ăn ngon lành với đầy đủ dụng cụ và thiết bị hiện đại,
                     mang lại cảm giác như ở nhà. Ngoài ra, tại sân sau của khách sạn, khách hàng có thể tận hưởng những buổi tiệc n
@@ -206,8 +206,8 @@ const Facilities = () => {
              <div className='flex lg:flex-row flex-col justify-between'>
             <div className='lg:w-1/2' data-aos="zoom-in">
                <div className='flex col-span-1 flex-col justify-center items-center text-accent font-primary lg:text-lg p-4' > 
-                 <h1 className='text-left text-lg text-white  font-secondary p-8'>Trò Chơi & Karaoke</h1>
-                  <p className='max-w-lg p-8 font-secondary  text-accent text-center text-lg'>
+                 <h1 className='text-left text-lg text-accent font-secondary p-8'>Trò Chơi & Karaoke</h1>
+                  <p className='max-w-lg p-8 font-secondary text-white text-center text-lg'>
                     Khue Le Bleu mang đến nhiều lựa chọn giải trí hấp dẫn với kho game PS4 đa dạng, các trò chơi board game như cờ vua, poker, cờ tướng,
                     và dịch vụ karaoke hiện đại. Khách hàng có thể thỏa sức vui chơi cùng bạn bè và gia đình trong không gian thoải mái, thư giãn. 
                     Từ các tựa game PS4 đình đám, những cuộc thi board game kịch tính, đến những giờ phút hát karaoke sôi động, Khue Le Bleu

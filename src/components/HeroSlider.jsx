@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Parallax} from 'react-scroll-parallax';
 //Parallax
 import { useParallax  } from 'react-scroll-parallax'
@@ -25,31 +26,33 @@ import "aos/dist/aos.css";
 
 // init AOS animation
 AOS.init({
-    duration: 3000,
-    loop:true,
-    once: false,
-    offset: 1000,
-    easing:true,
-    
+  duration: 3000,
+  loop:true,
+  once: false,
+  offset: 1000,
+  easing:true,
 });
 
-const slides =[
+const slides = [
   {
     title:'Chào Mừng đến với Khue Le Bleu',
     bg:Img1,
-    btnText:'Đặt Phòng'
+    btnText:'Đặt Phòng',
+    link: '/rooms'
   },
   {
     title:'Khám Phá Đồi Rồng',
     bg:Img2,
-    btnText:'Khám Phá'
+    btnText:'Khám Phá',
+    link: '/about'
   },
   {
     title:'Điểm Đến Lý Tưởng',
     bg:Img3,
-    btnText:'Đặt Phòng'
+    btnText:'Đặt Phòng',
+    link: '/rooms'
   }
-]
+];
 
 const HeroSlider = () => {
   const parallax = useParallax({ speed: -100,  });
@@ -82,7 +85,7 @@ const HeroSlider = () => {
    className={`heroSlider h-[400px] md:h-[600px] lg:h-[860px]`}>
     {slides.map((slide, index) => {
       //destructure slide
-      const{title, bg, btnText}= slide;
+      const{title, bg, btnText, link}= slide;
       return(
         <SwiperSlide ref={parallax.ref} className='h-full flex justify-center items-center' key={index}>
          <div className='z-20 text-white text-center'>
@@ -92,7 +95,9 @@ const HeroSlider = () => {
             {title}
           </h1>
           <button className='btn lg:btn-lg btn-sm btn-primary mx-auto cursor-pointer' >
-            {btnText}
+            <Link to={link}>
+              {btnText}
+            </Link>
           </button>
          </div>
 

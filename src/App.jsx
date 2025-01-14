@@ -5,6 +5,7 @@ import Footer from  './components/Footer'
 //pages
 import Home from './pages/Home'
 import RoomDetails from './pages/RoomDetails'
+import ErrorPage from './pages/404';
 
 //react router
 import {createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -17,36 +18,44 @@ import Loader from './components/Loader';
 
 import ArrowUp from './components/ArrowUp';
 
+
 const router = createBrowserRouter([
-   {
-    path:'/',
-    element:<Home/>
-   },
-   {
-    path:'/about',
-    element:<AboutPage/>
-   },
-   {
-    path:'/rooms',
-    element:<RoomsPage/>
-   },
-   {
-    path:'/room/:id',
-    element:<RoomDetails />
-   },
-   {
-    path:'/contact',
-    element:<Contact/>
-   },
-   {
-    path:'/blog',
-    element:<Blog/>
-   },
-   {
-    path:'/blog/:id',
-    element:<BlogDetails/>
-   }
-  ]);
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    children: [
+       {
+        path:'/',
+        element:<Home/>
+       },
+       {
+        path:'/about',
+        element:<AboutPage/>
+       },
+       {
+        path:'/rooms',
+        element:<RoomsPage/>
+       },
+       {
+        path:'/room/:id',
+        element:<RoomDetails />
+       },
+       {
+        path:'/contact',
+        element:<Contact/>
+       },
+       {
+        path:'/blog',
+        element:<Blog/>
+       },
+       {
+        path:'/blog/:id',
+        element:<BlogDetails/>
+       }
+    ],
+  },
+]);
+
 
 const App = () => {
   const [isLoading, setIsLoading]=useState(true)

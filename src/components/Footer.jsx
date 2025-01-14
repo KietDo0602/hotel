@@ -24,7 +24,7 @@ const Footer = () => {
            <h1 className='font-primary py-2 text-accent'>TIN TỨC</h1>
            <p className='py-3 lg:text-lg text-md'>Đăng ký để xem về Khue Le Bleu.</p>
            <form className='flex flex-col   gap-4'>
-             <input placeholder='Enter Email' className='px-8  py-3 '/>
+             <input placeholder='Email' className='px-5 py-3 text-black'/>
              <button className='btn btn-lg btn-secondary py-4'>Đăng Ký</button>
            </form>
         </div>

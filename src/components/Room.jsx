@@ -13,7 +13,7 @@ AOS.init({
 
 
 const Room = ({room}) => {
-  const {image, description, id , name , size, maxPerson, price} = room
+  const {image, short, description, id , name , size, maxPerson, price} = room
   return(
     <div data-aos="fade-up" className='bg-black/30 shadow-2xl min-h-[500px]  group'>
       {/*image*/}
@@ -32,7 +32,7 @@ const Room = ({room}) => {
              </div>
              <div className='flex gap-x-1 text-white'>
                <div>Size</div>
-               <div>{size}m2</div>
+               <div>{size}m<sup>2</sup></div>
              </div>
           </div>
           {/*room-capacity*/}
@@ -53,7 +53,7 @@ const Room = ({room}) => {
         <Link to={`/room/${id}`}>
           <h3 className='h3 text-accent'>{name}</h3>
         </Link>
-        <p className='max-w-[300px] text-accent mx-auto mb-2 lg:mb-6'>{description.slice(0,56)}</p>
+        <p className='max-w-[300px] text-accent mx-auto mb-2 lg:mb-6'>{short.slice(0,70)}</p>
       </div>
 
       {/*btn*/}

@@ -36,8 +36,8 @@ const dishes = [
   },
 ];
 
-const DishCard = ({ dish }) => (
-  <div className="overflow-hidden flex flex-col">
+const DishCard = ({ dish, index }) => (
+  <div className="overflow-hidden flex flex-col" key={index}>
     <img src={dish.image} alt={dish.name} className="w-full h-48 object-cover" />
     <div className="pt-10 flex flex-col text-secondary flex-grow">
       <h3 className="text-xl font-primary text-accent mb-2">{dish.name}</h3>
@@ -49,10 +49,14 @@ const DishCard = ({ dish }) => (
 
 const Menu = () => (
   <div className="container mx-auto px-4 py-8">
-    <h2 className="text-3xl font-primary text-accent text-center mb-8">Combo Ăn Sáng</h2>
+      <div className='text-white flex flex-col items-center py-4'>
+        <span className='text-md text-accent'>Ăn Sáng</span>
+        <h1 className='text-3xl p-2'>4 Combo</h1>
+        <p className='py-2 text-center'>Hãy chọn một combo ăn sáng.</p>
+      </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {dishes.map((dish, _index) => (
-        <DishCard dish={dish} />
+      {dishes.map((dish, index) => (
+        <DishCard dish={dish} index={index} />
       ))}
     </div>
   </div>
