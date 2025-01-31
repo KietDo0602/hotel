@@ -8,16 +8,16 @@ import {Menu} from '@headlessui/react'
 import { BsChevronDown } from 'react-icons/bs';
 
 const lis = [
-  {name: '1 Người Lớn'},
-  {name: '2 Người Lớn'},
-  {name: '3 Người Lớn'},
-  {name: '4 Người Lớn'},
-  {name: '5 Người Lớn'},
-  {name: '6 Người Lớn'},
-  {name: '7 Người Lớn'},
-  {name: '8 Người Lớn'},
-  {name: '9 Người Lớn'},
-  {name: '10 Người Lớn'},
+  {name: '1 Người Lớn', value: 1},
+  {name: '2 Người Lớn', value: 2},
+  {name: '3 Người Lớn', value: 3},
+  {name: '4 Người Lớn', value: 4},
+  {name: '5 Người Lớn', value: 5},
+  {name: '6 Người Lớn', value: 6},
+  {name: '7 Người Lớn', value: 7},
+  {name: '8 Người Lớn', value: 8},
+  {name: '9 Người Lớn', value: 9},
+  {name: '10 Người Lớn', value: 10},
 ]
 
 const AdultsDropdown = () => {
@@ -34,7 +34,7 @@ const AdultsDropdown = () => {
           {
             lis.map((li,index)=>(
               <Menu.Item as='li'
-              onClick={()=>setAdults(li.name)}
+               onClick={() => setAdults(li.name)}
                key={index}
                className='border-b last-of-type:border-b-0 h-12
                hover:bg-accent hover:text-white w-full flex justify-center

@@ -1,13 +1,14 @@
-import React,{ useState } from 'react';
-import DatePicker from 'react-datepicker'
+import React,{ useState, useContext } from 'react';
+import DatePicker from 'react-datepicker';
+import { RoomContext } from '../context/RoomContext';
 
-import 'react-datepicker/dist/react-datepicker.css'
-import '../datepicker.css'
+import 'react-datepicker/dist/react-datepicker.css';
+import '../datepicker.css';
 //icons
-import {BsAlarm, BsCalendar} from 'react-icons/bs'
+import {BsAlarm, BsCalendar} from 'react-icons/bs';
 
 const CheckIn = () => {
-  const [startDate, setStartDate] = useState(null);
+  const { checkinDate, setCheckinDate } = useContext(RoomContext);
 
   return (
     <div className="relative flex items-center h-full w-full">
@@ -18,10 +19,10 @@ const CheckIn = () => {
         </div>
         {/* DatePicker */}
         <DatePicker
-          className="w-full h-full pl-3 pr-4"
-          selected={startDate}
+          className="w-full h-full pl-3 pr-4 text-accent"
+          selected={checkinDate}
           placeholderText="Ngày Nhận Phòng"
-          onChange={(date) => setStartDate(date)}
+          onChange={(date) => setCheckinDate(date)}
         />
       </div>
     </div>

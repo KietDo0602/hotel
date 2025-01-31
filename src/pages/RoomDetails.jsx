@@ -12,7 +12,7 @@ import { RoomContext } from '../context/RoomContext'
 import { FaCheck } from 'react-icons/fa'
 
 const RoomDetails = () => {
-  const {rooms} = useContext(RoomContext)
+  const {rooms, handleClick} = useContext(RoomContext)
   const {id} = useParams()
 
   // get room
@@ -20,12 +20,12 @@ const RoomDetails = () => {
     return room.id === Number(id)
   })
    
-  const{name, description, facilities, price, imageLg} = room;
+  const {name, description, facilities, price, imageLg} = room;
   return (
   <section className='bg-primary'>
     {/* <ScrollToTop/> */}
     {/*banner*/}
-    <div className='bg-room bg-cover bg-center bg-fixed h-[560px] relative 
+    <div className='bg-roomBg bg-cover bg-center bg-fixed h-[560px] relative 
     flex justify-center items-center'>
       {/*overlay*/}
       <div className='absolute w-full h-full bg-black/70 ' ></div>
@@ -35,17 +35,17 @@ const RoomDetails = () => {
         {name}
       </h1>
     </div>
-    <div className='container mx-auto text-accent '>
+    <div className='container mx-auto text-white'>
       <div className='flex flex-col lg:flex-row h-full py-24'>
         {/*left*/}
         <div className='w-full h-full lg:w-[60%] px-6 '>
-            <h2 className='h2'>{name}</h2>
-            <p className='mb-8'>{description}</p>
+            <h2 className='h2 text-accent'>{name}</h2>
+            <p className='mb-8 text-white'>{description}</p>
             <img src={imageLg} alt='' className='mb-8'/>
             {/*facilities*/}
             <div className='mt-12'>
-              <h3 className='h3 mb-3'>Tiện Nghi Phòng</h3>
-              <p className='mb-12'>
+              <h3 className='h3 mb-3 text-accent'>Tiện Nghi Phòng</h3>
+              <p className='mb-12 text-white'>
                 Đây là những tiện nghi và dịch vụ Khue Le Bleu hỗ trợ. Hãy liên lạc với lễ tân nếu cần bất kì dịch vụ hay thắc mắc nào.
               </p> 
             </div>
@@ -69,27 +69,30 @@ const RoomDetails = () => {
           <div className='py-8 px-6 bg-accent/20 mb-12'>
               <div className='flex flex-col space-y-4 mb-4'>
                 <h3>Đặt Phòng</h3>
-                <div className='h-[60px]'>
+                <div className='h-[60px] text-accent'>
                   <CheckIn/>
                 </div>
-                <div className='h-[60px]'>
+                <div className='h-[60px] text-accent'>
                   <CheckOut/>
                 </div>
-                <div className='h-[60px]'>
+                <div className='h-[60px] text-grey'>
                   <AdultsDropdown/>
                 </div>
-                <div className='h-[60px]'>
+                <div className='h-[60px] text-black'>
                   <KidsDropdown/>
                 </div>
               </div>
-              <button className='btn btn-lg btn-primary w-full'>
+              <button 
+                className='btn btn-lg btn-primary w-full'
+                onClick={(e) => handleClick(e)}
+               >
                 Kiểm Tra Giá Phòng
               </button>
          </div>
           {/*rules*/}
           <div>
-             <h3 className='h3'>Luật</h3>
-             <p className='mb-6'>
+             <h3 className='h3 text-accent'>Luật</h3>
+             <p className='mb-6 text-white'>
                Tại Khue Le Bleu, chúng tôi đề cao sự thoải mái và an toàn của mọi khách hàng. 
                Quý khách vui lòng tuân thủ các quy định của khách sạn như không hút thuốc trong 
                phòng, giữ gìn vệ sinh chung và tuân thủ giờ giấc quy định. Mọi thắc mắc hoặc yêu 

@@ -15,7 +15,7 @@ AOS.init({
 const Room = ({room}) => {
   const {image, short, description, id , name , size, maxPerson, price} = room
   return(
-    <div data-aos="fade-up" className='bg-black/30 shadow-2xl min-h-[500px]  group'>
+    <div data-aos="fade-up" className='bg-black/30 shadow-2xl min-h-[500px] group'>
       {/*image*/}
       <div className=' group-hover:scale-110 transition-all duration-300'>
          <img src={image} alt=''/>

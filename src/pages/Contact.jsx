@@ -1,23 +1,49 @@
-import React,{useContext } from 'react'
-import {useParams} from 'react-router-dom'
+import React, { useState } from 'react'
 //components
-import AdultsDropdown from '../components/AdultsDropdown'
-import CheckIn from '../components/CheckIn'
-import CheckOut from '../components/CheckOut'
-import KidsDropdown from '../components/KidsDropdown'
 import { IoLocation } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
+import CheckIn from '../components/CheckIn';
+import CheckOut from '../components/CheckOut';
 //import ScrollToTop from '../components/ScrollToTop'
 //context
-import { RoomContext } from '../context/RoomContext'
-import Breaker from '../components/Breaker'
 
 //icons
-import { FaCheck } from 'react-icons/fa'
 import Map from '../components/Map'
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [title, setTitle] = useState('');
+  const [desc, setDesc] = useState('');
+  const [errors, setErrors] = useState({});
+
+  const handleSubmit = () => {
+    console.log('============================');
+    // Validate form fields
+    const newErrors = {};
+    if (!name) newErrors.name = 'Thiếu Tên!';
+    if (!title) newErrors.title = 'Thiếu Tiêu Đề';
+    if (!desc) newErrors.description = 'Thiếu Nội Dung';
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      // If validation passes, redirect to Gmail
+      const mailto = `mailto:khuelebleu@gmail.com?subject=${encodeURIComponent(title)}&body=${encodeURIComponent('Dear Khue Le Bleu,\n\n')}${encodeURIComponent(desc)}\n\nSincerely,\n${encodeURIComponent(name)}`
+      window.location.href = mailto;
+    }
+  };
+
+
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  }
+  const onTitleChange = (event) => {
+    setTitle(event.target.value);
+  }
+  const onDescChange = (event) => {
+    setDesc(event.target.value);
+  }
   
   return (
   <section className='bg-primary'>
@@ -74,15 +100,21 @@ const Contact = () => {
            </div>
 
         </div>
-        <div className='w-full bg-secondary h-[540px] lg:py-10'>
-          <form className='flex flex-col gap-4 p-4'>
+        <div className='w-full bg-secondary h-[640px] lg:py-10'>
+          <div className='flex flex-col gap-4 p-4'>
             <label className='text-2xl text-accent' htmlFor="">Liên Lạc</label>
-            <input type="text" placeholder="Tên Của Bạn" className='py-4 px-4'/>
-            <input type="email" placeholder="Email" className='py-4 px-4'/>
-            <input type="text" placeholder="Tiêu Đề" className='py-4 px-4'/>
-            <textarea type="text" placeholder="Nội Dung" className='py-4 px-4'/>
-            <button className='btn btn-secondary btn-lg py-6'>Gửi Tin Nhắn</button>
-          </form>
+            <input type="text" value={name} onChange={onNameChange} placeholder="Tên Của Bạn" className='py-4 px-4'/>
+            <input type="text" value={title} onChange={onTitleChange} placeholder="Tiêu Đề" className='py-4 px-4'/>
+            <div className='h-[60px] text-accent'>
+              <CheckIn/>
+            </div>
+            <div className='h-[60px] text-accent'>
+              <CheckOut/>
+            </div>
+            <textarea type="text" value={desc} onChange={onDescChange} placeholder="Nội Dung" className='py-4 px-4'/>
+            <button className='btn btn-secondary btn-lg py-6' onClick={handleSubmit}>Gửi Tin Nhắn</button>
+            {errors && <p className="text-red">{errors.name ? errors.name : ''} {errors.title ? errors.title : ''} {errors.description ? errors.description : ''} </p>}
+          </div>
         </div>
       </div>
     </div>

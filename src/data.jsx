@@ -15,14 +15,15 @@ import Room7Img from './assets/img/rooms/7.png';
 import Room7ImgLg from './assets/img/rooms/7-lg.png';
 import Room8Img from './assets/img/rooms/8.png';
 import Room8ImgLg from './assets/img/rooms/8-lg.png';
-import Dessert from './assets/img/menu/Dessert.jpg'
-import Drinks from './assets/img/menu/Drinks.jpg'
-import Main from './assets/img/menu/Main.jpg'
-import starters from './assets/img/menu/starters.jpg'
-import Blog1 from './assets/blog1.jpg'
-import Blog2 from './assets/blog2.jpg'
-import Blog3 from './assets/blog3.jpg'
-import Blog4 from './assets/blog4.jpg'
+import { FaBowlFood } from "react-icons/fa6";
+import Dessert from './assets/img/menu/Dessert.jpg';
+import Drinks from './assets/img/menu/Drinks.jpg';
+import Main from './assets/img/menu/Main.jpg';
+import starters from './assets/img/menu/starters.jpg';
+import Blog1 from './assets/doi-rong.jpg';
+import Blog2 from './assets/cv-anh-sang.jpg';
+import Blog3 from './assets/rung-ngap-man.jpg';
+import Blog4 from './assets/cv-than-thoai.jpg';
 
 import prof1 from './assets/prof1.jpg'
 import prof2 from './assets/prof2.jpg'
@@ -36,9 +37,6 @@ import {
   FaCoffee,
   FaBath,
   FaParking,
-  FaSwimmingPool,
-  FaHotdog,
-  FaStopwatch,
   FaCocktail,
   FaTv,
   FaChess,
@@ -56,7 +54,7 @@ export function generateBookingLink(checkinDate, checkoutDate, adults, children)
   // const checkoutDate = '2025-03-25';
   // const adults = 2;
   // const children = 1;
-  const baseURL = `https://www.booking.com/hotel/`;
+  const baseURL = `https://www.booking.com/hotel/vn/`;
   const params = new URLSearchParams({
     checkin: checkinDate,
     checkout: checkoutDate,
@@ -64,7 +62,21 @@ export function generateBookingLink(checkinDate, checkoutDate, adults, children)
     group_children: children
   });
 
-  return `${baseURL}khue-le-bleu-villa.vi.html?${params.toString()}`;
+  const res = `${baseURL}khue-le-bleu-villa.vi.html?${params.toString()}`;
+
+  return res;
+}
+
+export function formatDate(date) {
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // January is 0!
+  const year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+}
+
+export function extractNumber(inputString) {
+  const match = inputString.match(/\d+/);
+  return match ? parseInt(match[0], 10) : null;
 }
 
 
@@ -79,7 +91,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -105,7 +117,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -131,7 +143,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -157,7 +169,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -183,7 +195,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -209,7 +221,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -235,7 +247,7 @@ export const roomData = [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaHotdog /> },
+      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },

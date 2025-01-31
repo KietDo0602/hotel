@@ -20,7 +20,7 @@ const BlogDetails = () => {
     return blog.id === Number(id)
   })  
    
-  const{name, description, image} = blog;
+  const {name, description, image} = blog;
   return (
   <section className='bg-primary '>
     {/* <ScrollToTop/> */}
@@ -48,9 +48,6 @@ const BlogDetails = () => {
          {/*right*/}
          <div className='w-full h-full lg:w-[40%] '>
             {/*reservation*/}
-            <div>
-              <input type="text" className='px-4 py-2 outline-none' placeholder='Tìm Kiếm' />
-            </div>
             <div className='h-48 flex flex-col lg:gap-8'>
               <h1 className='pt-20 text-2xl'>Bài viết Phổ Biến</h1>
               {blogs.map((blog)=>(
@@ -60,9 +57,9 @@ const BlogDetails = () => {
                    <div className=' text-accent flex flex-col cursor-pointer'>
 
                    <h1 className='text-accent text-xl py-2 hover:underline'>{blog.name}</h1>
-                  <span className='hover:text-white'>
-                     Đọc Thêm
-                  </span>
+                    <span className='hover:text-white'>
+                       Đọc Thêm
+                    </span>
                    </div>
                    </Link>
                 </div> 

@@ -3,24 +3,16 @@ import React,{useContext} from 'react'
 // import rest from '../assets/img/restrauant.jpg'
 // import Spaz from '../assets/spaz.jpg'
 // import pool from '../assets/swimmingpool.jpg'
-import gym from '../assets/gym.jpg'
 import hotel2 from '../assets/hotel2.jpg'
-import ceo from '../assets/t-avt-1.png'
-import { IoStarSharp } from "react-icons/io5";
-import HeroSlider from '../components/HeroSlider'
-import AboutUs from '../components/AboutUs'
 import Breaker from '../components/Breaker'
-import Amenities from '../components/Amenities'
-import ReviewsPage from '../components/ReviewsPage'
-import Facilities from '../components/Facilities'
 import { ScreenSizeContext } from '../context/ScreenSizeContext';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { teamList } from '../data'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectFade, Autoplay, Pagination} from 'swiper'
 import { FaQuoteRight, FaQuoteLeft } from 'react-icons/fa6'
-import { FaAward } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -62,7 +54,8 @@ const slides = [
 
 
 const AboutPage = () => {
-  const {isMobile, isMidMobile} = useContext(ScreenSizeContext)
+  const {isMobile, isMidMobile} = useContext(ScreenSizeContext);
+  const navigate = useNavigate();
 
   let r = 2
   if(isMobile){
@@ -89,43 +82,8 @@ const AboutPage = () => {
     },
    
   };
-  const grid2ContainerStyle = {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(2, 1fr)',
-      gridTemplateRows: 'repeat(3, 0.5fr)',
-      gap: '1rem',
-      gridTemplateAreas: '"a b" "c d" "e f" "g h"',
-    };
-  
 
-  const gridSmallDeviceStyle = {
-    display:'grid',
-    gridTemplateColumns:'repeat(3, 1fr)',
-    // gridTemplateRows:'repeat(4, 1fr)',
-    gap:'1rem',
-    gridTemplateAreas:'"a""b" "c" "d" "e" "f" "g" "h"',
-  };
-    const gridItem2Style = {
-      // background: '#ccc',
-      padding: '.5rem', 
-      //original 1rem
-    };
-
-
-
-
-  const gridContainerStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    gridTemplateRows: 'repeat(1, 0.5fr)',
-    gap: '1.5rem',
-    gridTemplateAreas: '"a b c d"',
-  };
-  const gridItemStyle = {
-    // background: '#ccc',
-    padding: '0rem', 
-    //original 1rem
-  };
+  const openRoom = (e) => navigate('/rooms'); 
 
 
 
@@ -149,7 +107,7 @@ const AboutPage = () => {
              </p>
             
          <div className='lg:flex lg:w-1/2 w-full justify-start py-6 px-10 '>
-           <button className='btn btn-lg btn-primary mx-auto hover:text-accent'>Đặt Phòng</button>
+           <button className='btn btn-lg btn-primary mx-auto hover:text-accent' onClick={(e) => openRoom(e)}>Đặt Phòng</button>
          </div>
          </div>
          <div className='flex flex-col items-center border-l border-secondary'>
@@ -186,13 +144,7 @@ const AboutPage = () => {
 
           </div>
           <div className='lg:w-1/4 w-16 h-[600px]'  style={{backgroundImage:"url('https://images.unsplash.com/photo-1567360425618-1594206637d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fHww')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
-
-
           </div>
-
-
-
-
 
         </div>
 
@@ -201,7 +153,7 @@ const AboutPage = () => {
         
         <div className='w-full h-48  text-white flex flex-col justify-center items-center'>
           <div className='flex flex-col justify-center items-center text-accent font-primary font-semibold text-3xl py-8'>
-            Our Service
+            Về Chúng Tôi
           </div>
           <div className='p-4'>
             <div className='flex lg:flex-row flex-col gap-8'>

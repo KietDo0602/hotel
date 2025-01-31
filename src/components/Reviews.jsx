@@ -1,9 +1,9 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectFade, Autoplay, Pagination} from 'swiper'
-import prof1 from '../assets/t-avt-1.png'
-import prof2 from '../assets/t-avt-2.png'
-import prof3 from '../assets/t-avt-3.png'
+import prof1 from '../assets/prof1.jpg'
+import prof2 from '../assets/prof2.jpg'
+import prof3 from '../assets/prof3.jpg'
 import { FaQuoteLeft } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa6";
 
@@ -53,10 +53,9 @@ const swiperParams = {
     el: '.swiper-pagination',
     clickable: true,
   },
- 
 };
+
 const Reviews = () => {
-  
   return (
      <div className='container mx-auto'>
       <Swiper {...swiperParams}  modules={[EffectFade, Autoplay, Pagination]}>
