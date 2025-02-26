@@ -69,34 +69,42 @@ const Contact = () => {
              Chúng tôi cam kết sẽ phản hồi nhanh chóng và tận tâm để đảm bảo quý khách có trải nghiệm tốt nhất. 
            </p>
            <div className='py-8'>
-              <div className='flex py-4  gap-5 px-4 border-b border-r-accent'>
-                <div className='text-accent'>
-                   <IoLocation size={20}/>
+
+              <a target='_blank' rel='noopener noreferrer' href="mailto:khuelebleu@gmail.com">
+                <div className='flex py-4  gap-5 px-4 border-b border-r-accent'>
+                  <div className='text-accent'>
+                     <IoLocation size={20}/>
+                  </div>
+                  <div className='text-white'>
+                     <h2 className='font-primary text-lg'>Địa Chỉ</h2>
+                     <p>KL6.15 Đường Kim Long 6, Đồi Rồng, Đồ Sơn, Hải Phòng, Việt Nam</p>
+                  </div>
                 </div>
-                <div className='text-white'>
-                   <h2 className='font-primary text-lg'>Địa Chỉ</h2>
-                   <p>KL6.15 Đường Kim Long 6, Đồi Rồng, Đồ Sơn, Hải Phòng, Việt Nam</p>
+              </a>
+
+              <a target='_blank' rel='noopener noreferrer' href="mailto:khuelebleu@gmail.com">
+                <div className='flex py-4  gap-5 px-4 border-b border-r-accent' >
+                  <div className='text-accent'>
+                   <IoIosMail size={20}/>
+                  </div>
+                  <div className='text-white'>
+                     <h2 className='font-primary text-lg' >Email</h2>
+                     <p>khuelebleu@gmail.com</p>
+                  </div>
                 </div>
-              </div>
-              <div className='flex py-4  gap-5 px-4 border-b border-r-accent' >
-                <div className='text-accent'>
-                 <IoIosMail size={20}/>
-                </div>
-                <div className='text-white'>
-                   <h2 className='font-primary text-lg' >Email</h2>
-                   <p>khuelebleu@gmail.com</p>
-                </div>
-             
-              </div>
-              <div className='flex py-4 gap-5 px-4 border-b border-r-accent'>
-                <div className='text-accent'>
-                  <FaPhoneAlt size={20}/>
-                </div>
-                <div className='text-white'>
-                  <h2 className='font-primary text-lg'>Gọi Chúng Tôi</h2>
-                  <p>(+84) 0965162005</p>
-                </div>
-              </div>
+              </a>
+
+              <a target='_blank' rel='noopener noreferrer' href="tel:0965162005">
+                <div className='flex py-4 gap-5 px-4 border-b border-r-accent'>
+                  <div className='text-accent'>
+                    <FaPhoneAlt size={20}/>
+                  </div>
+                  <div className='text-white'>
+                    <h2 className='font-primary text-lg'>Gọi Chúng Tôi</h2>
+                    <p>(+84) 0965162005</p>
+                  </div>
+                  </div>
+              </a>
            </div>
 
         </div>

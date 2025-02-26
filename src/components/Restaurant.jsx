@@ -9,30 +9,38 @@ const dishes = [
   {
     id: 1,
     name: "Combo A",
-    description: "Freshly grilled salmon served with a side of seasonal vegetables and lemon butter sauce.",
-    price: "100,000 VND",
-    image: Drinks,
+    main: "Bánh Mì Ốp La, Xúc Xích",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
+    price: "120,000 VND",
+    image: starters,
   },
   {
     id: 2,
     name: "Combo B",
-    description: "Juicy beef steak cooked to perfection, served with mashed potatoes and red wine reduction.",
-    price: "120,000 VND",
-    image: Dessert,
-  },
-  {
-    id: 3,
-    name: "Combo C",
-    description: "A delightful mix of fresh vegetables and pasta in a creamy garlic sauce.",
+    main: "Phở Bò",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
     price: "120,000 VND",
     image: Main,
   },
   {
-    id: 4,
-    name: "Combo D",
-    description: "A delightful mix of fresh vegetables and pasta in a creamy garlic sauce.",
+    id: 3,
+    name: "Combo C",
+    main: "Bánh Đa Cua Hải Phòng",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
     price: "120,000 VND",
     image: starters,
+  },
+  {
+    id: 4,
+    name: "Combo D",
+    main: "Cơm Rang Dưa Bò",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
+    price: "120,000 VND",
+    image: Main,
   },
 ];
 
@@ -40,8 +48,10 @@ const DishCard = ({ dish, index }) => (
   <div className="overflow-hidden flex flex-col" key={index}>
     <img src={dish.image} alt={dish.name} className="w-full h-48 object-cover" />
     <div className="pt-10 flex flex-col text-secondary flex-grow">
-      <h3 className="text-xl font-primary text-accent mb-2">{dish.name}</h3>
-      <p className="text-white mb-4 flex-grow">{dish.description}</p>
+      <h3 className="text-2xl font-primary text-accent mb-2">{dish.name}</h3>
+      <p className="text-white mb-4 flex-grow">{dish.main}</p>
+      <p className="text-white mb-4 flex-grow">{dish.side}</p>
+      <p className="text-white mb-4 flex-grow">{dish.drink}</p>
       {/* <p className="text-lg text-accent">{dish.price}</p> */}
     </div>
   </div>

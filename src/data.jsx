@@ -15,7 +15,7 @@ import Room7Img from './assets/img/rooms/7.png';
 import Room7ImgLg from './assets/img/rooms/7-lg.png';
 import Room8Img from './assets/img/rooms/8.png';
 import Room8ImgLg from './assets/img/rooms/8-lg.png';
-import { FaBowlFood } from "react-icons/fa6";
+import { FaBowlRice } from "react-icons/fa6";
 import Dessert from './assets/img/menu/Dessert.jpg';
 import Drinks from './assets/img/menu/Drinks.jpg';
 import Main from './assets/img/menu/Main.jpg';
@@ -89,9 +89,9 @@ export const roomData = [
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -115,9 +115,9 @@ export const roomData = [
       'Phòng với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -141,9 +141,9 @@ export const roomData = [
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường, mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -167,9 +167,9 @@ export const roomData = [
       'Phòng rộng rãi với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -193,9 +193,9 @@ export const roomData = [
       'Phòng rộng rãi với một giường cỡ king và một giường thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -219,9 +219,9 @@ export const roomData = [
       'Phòng thoáng mát với một giường cỡ king, sẽ mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, ánh sáng tràn vào phòng tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },
@@ -245,9 +245,9 @@ export const roomData = [
       'Phòng rộng rãi với một giường cỡ king và một giường cỡ thường mang đến sự thoải mái và ấm cúng. Ban công riêng nhìn ra toàn cảnh Đồi Rông, tạo nên bức tranh lấp lánh và thơ mộng. Nội thất hiện đại với gam màu cổ điển mà trẻ trung, tạo cảm giác thư giãn và thanh lịch. Tiện nghi bao gồm Wi-Fi miễn phí, TV màn hình phẳng, tủ lạnh mini và phòng tắm sang trọng. Đây là nơi lý tưởng để tận hưởng kỳ nghỉ của bạn.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Ăn Sáng', icon: <FaBowlRice /> },
       { name: 'Cà Phê', icon: <FaCoffee /> },
       { name: 'Tivi', icon: <FaTv /> },
-      { name: 'Ăn Sáng', icon: <FaBowlFood /> },
       { name: 'Đồ Uống', icon: <FaCocktail /> },
       { name: 'Ban Công', icon: <MdBalcony /> },
       { name: 'Vệ Sinh Riêng', icon: <FaBath /> },

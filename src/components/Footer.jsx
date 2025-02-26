@@ -2,17 +2,16 @@ import React,{useContext} from 'react';
 import { Logo } from '../assets';
 import { IoLocation } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
-import { FaPhoneAlt, FaInstagram, FaPinterest,  FaYoutube, FaFacebook } from "react-icons/fa";
+import { FaPhoneAlt, FaFacebook } from "react-icons/fa";
 import { TbBrandBooking } from "react-icons/tb";
-import BookingIcon from '../assets/booking_icon.svg';
-import { FaXTwitter } from "react-icons/fa6";
 import { RoomContext } from '../context/RoomContext';
-import Bew from '../assets/hotel.jpg'
+import { Link } from 'react-router-dom';
 
 
 
 const Footer = () => {
-  const {rooms} =useContext(RoomContext)
+  const { rooms } = useContext(RoomContext);
+
   return(
     <>
     <div className='w-full lg:h-28 h-80 bg-primary'>
@@ -65,14 +64,33 @@ const Footer = () => {
           
            <div className='lg:space-y-10  py-6 text-accent items-center'>
             <h1 className="text-accent lg:text-3xl text-xl font-primary lg:py-2 text-center  ">Liên Hệ</h1>
-              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'><IoIosMail/><span className='px-4 text-white'>khuelebleu@gmail.com</span></p>
-              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'><FaPhoneAlt/><span className='px-4 text-white'>0965162005</span> </p>
-              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'><IoLocation/><span className='px-4 text-white'>KL6.15 Đường Kim Long 6, Đồi Rồng</span></p>
+              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'>
+                <IoIosMail/>
+                <a target='_blank' rel='noopener noreferrer' href="mailto:khuelebleu@gmail.com">
+                  <span className='px-4 text-white'>khuelebleu@gmail.com</span>
+                </a>
+              </p>
+              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'>
+                <FaPhoneAlt/>
+                <a target='_blank' rel='noopener noreferrer' href="tel:0965162005">
+                  <span className='px-4 text-white'>0965162005</span>
+                </a>
+              </p>
+              <p className='lg:px-4 px-2 flex lg:flex-row flex-col'>
+                <IoLocation/>
+                <a target='_blank' rel='noopener noreferrer' href="https://maps.app.goo.gl/wJReB4gmY1Zxooi27?g_st=com.google.maps.preview.copy">
+                  <span className='px-4 text-white'>KL6.15 Đường Kim Long 6, Đồi Rồng</span>
+                </a>
+              </p>
            </div>
            <div className='flex flex-row gap-4 text-xl py-4 pb-4 text-accent '>
-            <FaFacebook className='hover:text-white'/>
-             <TbBrandBooking className="hover:text-white text-accent bg-111a38" size={23}/>
-         </div>
+             <a target='_blank' rel='noopener noreferrer' href="https://facebook.com/khuelebleu">
+               <FaFacebook className='hover:text-white'/>
+             </a>
+             <a target='_blank' rel='noopener noreferrer' href="https://www.booking.com/hotel/vn/khue-le-bleu-villa.vi.html">
+               <TbBrandBooking className="hover:text-white text-accent bg-111a38" size={23}/>
+             </a>
+           </div>
           
 
           </div>
@@ -82,7 +100,7 @@ const Footer = () => {
     <div className='bg-primary'>
       <div className='container mx-auto text-white flex justify-center py-3'>  
          <span className='flex flex-col justify-center'>
-             &copy; 2025, Khue Le Bleu. All rights reserved.
+             &copy; 2025. Toàn bộ bản quyền thuộc Khue Le Bleu.
          </span>
       </div>
     </div>

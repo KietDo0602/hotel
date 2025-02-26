@@ -20,8 +20,9 @@ const arr = [
   }
 ]
 const Blog = () => {
-  const {isMidMobile} = useContext(ScreenSizeContext);
-  const {blogs} = useContext(RoomContext)
+  const { isMidMobile } = useContext(ScreenSizeContext);
+  const {blogs} = useContext(RoomContext);
+
   return (
     <div>
 
@@ -66,8 +67,7 @@ const Blog = () => {
                </div>
                </div>
                <div className='md:w-1/3 h-full py-4'>
-                  <input type="text" placeholder='Search Posts' className='p-1 outline-none' />
-                  <div className='w-full h-screen flex flex-col text-white space-y-4 py-8'>
+                  <div className='w-full h-screen flex flex-col text-white space-y-4'>
                     <h1 className='text-3xl text-accent'>Bài viết Phổ Biến</h1>
                      {blogs.map((blog)=>(
                       <>
