@@ -36,18 +36,21 @@ AOS.init({
 const slides = [
   {
     title:'Chào Mừng đến với Khue Le Bleu',
+    sub:'Đồi Rồng, Hải Phòng',
     bg:Img1,
     btnText:'Đặt Phòng',
     link: '/rooms'
   },
   {
     title:'Khám Phá Đồi Rồng',
+    sub:'Vui Chơi Thả Ga',
     bg:Img2,
     btnText:'Khám Phá',
     link: '/about'
   },
   {
     title:'Điểm Đến Lý Tưởng',
+    sub:'Đồi Rồng, Hải Phòng',
     bg:Img3,
     btnText:'Đặt Phòng',
     link: '/rooms'
@@ -85,13 +88,12 @@ const HeroSlider = () => {
    className={`heroSlider h-[400px] md:h-[600px] lg:h-[860px]`}>
     {slides.map((slide, index) => {
       //destructure slide
-      const{title, bg, btnText, link}= slide;
+      const{title, sub, bg, btnText, link}= slide;
       return(
         <SwiperSlide ref={parallax.ref} className='h-full flex justify-center items-center' key={index}>
          <div className='z-20 text-white text-center'>
-          <div className='uppercase font-tertiary tracking-[6px] lg:mb-5 mb-3'>Đến Và Tận Hưởng</div>
-          <h1 className='text-[24px] font-primary uppercase tracking-[2px]
-          max-w-[920px] lg:text-[68px] leading-tight lg:mb-6 mb-3'>
+          <div className='uppercase font-tertiary tracking-[6px] lg:mb-5 mb-3 text-md'>{sub}</div>
+          <h1 className='text-[30px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] leading-tight lg:mb-6 mb-3'>
             {title}
           </h1>
           <button className='btn lg:btn-lg btn-sm btn-primary mx-auto cursor-pointer' >

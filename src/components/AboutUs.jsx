@@ -4,7 +4,7 @@ import React from 'react'
 const AboutUs = () => {
   return (
     <div className='w-full lg:h-screen flex lg:flex-row flex-col justify-between lg:mt-36 mt-8 lg:px-24 px-8 '>
-      <div className='w-3/4 h-full bg-center' style={{backgroundImage:"url('https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+      <div className='w-3/4 h-full bg-center' style={{backgroundImage:"url('/src/assets/img/hotel.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
        </div>
       <div className='text-white lg:w-1/2 w-full flex flex-col lg:justify-center justify-start lg:px-8 px-2 lg:mb-0 mb-16'>
         <h2 className='text-lg py-2 font-secondary text-accent'>Về Chúng Tôi</h2>

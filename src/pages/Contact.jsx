@@ -18,7 +18,6 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
 
   const handleSubmit = () => {
-    console.log('============================');
     // Validate form fields
     const newErrors = {};
     if (!name) newErrors.name = 'Thiếu Tên!';
@@ -70,13 +69,13 @@ const Contact = () => {
            </p>
            <div className='py-8'>
 
-              <a target='_blank' rel='noopener noreferrer' href="mailto:khuelebleu@gmail.com">
+              <a target='_blank' rel='noopener noreferrer' href="https://maps.app.goo.gl/haSZMPsEycJAtwNJA">
                 <div className='flex py-4  gap-5 px-4 border-b border-r-accent'>
                   <div className='text-accent'>
                      <IoLocation size={20}/>
                   </div>
                   <div className='text-white'>
-                     <h2 className='font-primary text-lg'>Địa Chỉ</h2>
+                     <h2 className='font-primary text-lg'>Địa Chỉ (Google Maps)</h2>
                      <p>KL6.15 Đường Kim Long 6, Đồi Rồng, Đồ Sơn, Hải Phòng, Việt Nam</p>
                   </div>
                 </div>

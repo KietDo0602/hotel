@@ -19,7 +19,7 @@ const CheckIn = () => {
         </div>
         {/* DatePicker */}
         <DatePicker
-          className="w-full h-full pl-3 pr-4 text-accent"
+          className="w-full h-full pl-3 pr-4"
           selected={checkinDate}
           placeholderText="Ngày Nhận Phòng"
           onChange={(date) => setCheckinDate(date)}

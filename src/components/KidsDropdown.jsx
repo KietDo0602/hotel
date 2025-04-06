@@ -14,6 +14,8 @@ const lis = [
   {name: '3 Trẻ Em', value: 3},
   {name: '4 Trẻ Em', value: 4},
   {name: '5 Trẻ Em', value: 5},
+  {name: '6 Trẻ Em', value: 6},
+  {name: '7 Trẻ Em', value: 7},
 ]
 
 const KidsDropdown = () => {

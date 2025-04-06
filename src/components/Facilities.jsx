@@ -72,7 +72,7 @@ const Facilities = () => {
            </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' >
-              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/outside.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               
@@ -100,7 +100,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
                </div>
 
@@ -108,7 +108,7 @@ const Facilities = () => {
           </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/kitchen3.jpg')", backgroundAttachment:'fixed', background:'cover'}}>
 
               </div>
            
@@ -138,7 +138,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/boardgame.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                 
@@ -165,7 +165,7 @@ const Facilities = () => {
               </div>  
                </div>
                <div className='lg:w-1/2' >
-                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
+                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/outside.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
                </div>
              </div>
              <div className='flex lg:flex-row flex-col  justify-between'>
@@ -180,7 +180,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
 
@@ -199,7 +199,7 @@ const Facilities = () => {
                </div>
              </div>
              <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/kitchen3.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
              </div>
             </div>
              </div>
@@ -216,7 +216,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('src/assets/img/boardgame.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
             </div>

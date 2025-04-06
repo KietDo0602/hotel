@@ -1,20 +1,18 @@
 // rooms images
-import Room1Img from './assets/img/rooms/1.png';
-import Room1ImgLg from './assets/img/rooms/1-lg.png';
-import Room2Img from './assets/img/rooms/2.png';
-import Room2ImgLg from './assets/img/rooms/2-lg.png';
-import Room3Img from './assets/img/rooms/3.png';
-import Room3ImgLg from './assets/img/rooms/3-lg.png';
-import Room4Img from './assets/img/rooms/4.png';
-import Room4ImgLg from './assets/img/rooms/4-lg.png';
-import Room5Img from './assets/img/rooms/5.png';
-import Room5ImgLg from './assets/img/rooms/5-lg.png';
-import Room6Img from './assets/img/rooms/6.png';
-import Room6ImgLg from './assets/img/rooms/6-lg.png';
-import Room7Img from './assets/img/rooms/7.png';
-import Room7ImgLg from './assets/img/rooms/7-lg.png';
-import Room8Img from './assets/img/rooms/8.png';
-import Room8ImgLg from './assets/img/rooms/8-lg.png';
+import Room1Img from './assets/img/rooms/201.jpg';
+import Room1ImgLg from './assets/img/rooms/201.jpg';
+import Room2Img from './assets/img/rooms/202.jpg';
+import Room2ImgLg from './assets/img/rooms/202.jpg';
+import Room3Img from './assets/img/rooms/301.jpg';
+import Room3ImgLg from './assets/img/rooms/301.jpg';
+import Room4Img from './assets/img/rooms/302.jpg';
+import Room4ImgLg from './assets/img/rooms/302.jpg';
+import Room5Img from './assets/img/rooms/401.jpg';
+import Room5ImgLg from './assets/img/rooms/401.jpg';
+import Room6Img from './assets/img/rooms/402.jpg';
+import Room6ImgLg from './assets/img/rooms/402.jpg';
+import Room7Img from './assets/img/rooms/501.jpg';
+import Room7ImgLg from './assets/img/rooms/501.jpg';
 import { FaBowlRice } from "react-icons/fa6";
 import Dessert from './assets/img/menu/Dessert.jpg';
 import Drinks from './assets/img/menu/Drinks.jpg';
@@ -153,7 +151,7 @@ export const roomData = [
       { name: 'Trò Chơi', icon: <FaChess /> },
       { name: 'Két Sắt', icon: <BsSafe2 /> },
     ],
-    size: 80,
+    size: 40,
     maxPerson: 3,
     price: 80,
     image: Room3Img,

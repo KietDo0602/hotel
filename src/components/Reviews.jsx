@@ -1,9 +1,6 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectFade, Autoplay, Pagination} from 'swiper'
-import prof1 from '../assets/prof1.jpg'
-import prof2 from '../assets/prof2.jpg'
-import prof3 from '../assets/prof3.jpg'
 import { FaQuoteLeft } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa6";
 
@@ -20,21 +17,23 @@ import 'swiper/css/effect-fade'
 const slides = [
   { 
     id:1,
-    title:"Phi Long",
-    description:'Khue Le Bleu Villa có vị trí đẹp, gần các điểm vui chơi ở Đồi Rồng. Nhân viên thân thiện và phục vụ chu đáo. Phòng khách thoáng đãng, sáng sủa.',
-    img:prof1
+    title:"Yến",
+    description: "Đồ ăn ở đây rất ngon, phòng thì sạch sẽ, tháng mát, phục vụ thì tận tâm, gọi đến là xuất hiện liền chứ không chậm trễ, bên này được cái hay là hướng dẫn tận tình còn chỉ thêm 1 số địa điểm nổi để đến trải nghiệm nữa chứ",
   },
   { 
     id:2,
-    title:"Trần Hải",
-    description:'Khue Le Bleu Villa tuy nhỏ nhưng rất đẹp và sạch sẽ. Nhân viên rất thân thiện và hỗ trợ tốt. Không gian sang trọng, thích hợp cho du khách muốn tìm kiếm sự yên tĩnh.',
-    img:prof2
+    title:"Lyra",
+    description: "My family recently had a vacation at Khue Le Bleu Villa and overall, it was a memorable experience. The villa has a modern design, a green and peaceful environment, making it perfect for a relaxing getaway. The rooms are spacious, clean, and well-equipped with comfortable beds and efficient air conditioning, me and my family had a good night's sleep in our room.",
   },
   {
     id:3,
-    title:"Linh Hoang",
-    description:'Phòng ốc sạch sẽ mà giá lại hạt dẻ. Nhân viên dễ thương, nhiệt tình lắm. Mình ở 2 ngày mà thấy thoải mái như ở nhà luôn. Sẽ quay lại nếu có dịp!',
-    img:prof3
+    title:"Thanh",
+    description: "Phòng sạch sẽ, đầy đủ tiện nghi cần thiết cho một buổi nghỉ dưỡng. Villa ngay đường lớn rất dễ tìm, nhân viên cũng thân thiện nhiệt tình nữa, rất đáng lưu lại để lần sau đặt tiếp nếu có dịp đến đây",
+  },
+  {
+    id:4,
+    title:"Anh",
+    description: "Em vừa có một kỳ nghỉ siêu ưng ý tại Khue Le Bleu Villa và muốn chia sẻ ngay cảm nhận của mình! Ngay từ lúc bước vào, em đã thấy không gian ấm cúng, dễ chịu như ở nhà. Phòng thì sạch sẽ, xinh xắn, tiện nghi đầy đủ, giường êm cực kỳ luôn! Nhân viên ở đây siêu dễ thương, lúc nào cũng niềm nở và sẵn sàng giúp đỡ. Wi-Fi mạnh, bãi đỗ xe rộng rãi, mọi thứ đều tiện lợi và thoải mái. Nhất định em sẽ quay lại vì thực sự thích nơi này quá trời! 🥰",
   }
 ];
 

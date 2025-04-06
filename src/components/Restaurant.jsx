@@ -1,37 +1,37 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-import Drinks from '../assets/img/menu/Drinks.jpg'
-import Dessert from '../assets/img/menu/Dessert.jpg'
-import Main from '../assets/img/menu/Main.jpg'
-import starters from '../assets/img/menu/starters.jpg'
+import ComboA from '../assets/img/menu/banh-da-cua.jpg';
+import ComboB from '../assets/img/menu/buncacay.jpg';
+import ComboC from '../assets/img/menu/phobo.jpg';
+import ComboD from '../assets/img/menu/comrangduabo.webp';
 
 const dishes = [
   {
     id: 1,
     name: "Combo A",
-    main: "Bánh Mì Ốp La, Xúc Xích",
-    side: "Bánh Mì Que",
-    drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
-    image: starters,
-  },
-  {
-    id: 2,
-    name: "Combo B",
-    main: "Phở Bò",
-    side: "Bánh Mì Que",
-    drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
-    image: Main,
-  },
-  {
-    id: 3,
-    name: "Combo C",
     main: "Bánh Đa Cua Hải Phòng",
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
     price: "120,000 VND",
-    image: starters,
+    image: ComboA,
+  },
+  {
+    id: 2,
+    name: "Combo B",
+    main: "Bún Cá Cay Hải Phòng",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
+    price: "120,000 VND",
+    image: ComboB,
+  },
+  {
+    id: 3,
+    name: "Combo C",
+    main: "Phở Bò",
+    side: "Bánh Mì Que",
+    drink: "Nước Uống Tự Chọn",
+    price: "120,000 VND",
+    image: ComboC,
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const dishes = [
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
     price: "120,000 VND",
-    image: Main,
+    image: ComboD,
   },
 ];
 

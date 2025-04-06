@@ -18,6 +18,8 @@ const lis = [
   {name: '8 Người Lớn', value: 8},
   {name: '9 Người Lớn', value: 9},
   {name: '10 Người Lớn', value: 10},
+  {name: '11 Người Lớn', value: 11},
+  {name: '12 Người Lớn', value: 12},
 ]
 
 const AdultsDropdown = () => {

@@ -33,18 +33,23 @@ AOS.init({
 const slides = [
   { 
     id:1,
-    title:"Phi Long",
-    description:'Khue Le Bleu Villa có vị trí đẹp, gần các điểm vui chơi ở Đồi Rồng. Nhân viên thân thiện và phục vụ chu đáo. Phòng khách thoáng đãng, sáng sủa.',
+    title:"Yến",
+    description: "Đồ ăn ở đây rất ngon, phòng thì sạch sẽ, tháng mát, phục vụ thì tận tâm, gọi đến là xuất hiện liền chứ không chậm trễ, bên này được cái hay là hướng dẫn tận tình còn chỉ thêm 1 số địa điểm nổi để đến trải nghiệm nữa chứ",
   },
   { 
     id:2,
-    title:"Trần Hải",
-    description:'Khue Le Bleu Villa tuy nhỏ nhưng rất đẹp và sạch sẽ. Nhân viên rất thân thiện và hỗ trợ tốt. Không gian sang trọng, thích hợp cho du khách muốn tìm kiếm sự yên tĩnh.',
+    title:"Lyra",
+    description: "My family recently had a vacation at Khue Le Bleu Villa and overall, it was a memorable experience. The villa has a modern design, a green and peaceful environment, making it perfect for a relaxing getaway. The rooms are spacious, clean, and well-equipped with comfortable beds and efficient air conditioning, me and my family had a good night's sleep in our room.",
   },
   {
     id:3,
-    title:"Linh Hoang",
-    description:'Phòng ốc sạch sẽ mà giá lại hạt dẻ. Nhân viên dễ thương, nhiệt tình lắm. Mình ở 2 ngày mà thấy thoải mái như ở nhà luôn. Sẽ quay lại nếu có dịp!',
+    title:"Thanh",
+    description: "Phòng sạch sẽ, đầy đủ tiện nghi cần thiết cho một buổi nghỉ dưỡng. Villa ngay đường lớn rất dễ tìm, nhân viên cũng thân thiện nhiệt tình nữa, rất đáng lưu lại để lần sau đặt tiếp nếu có dịp đến đây",
+  },
+  {
+    id:4,
+    title:"Anh",
+    description: "Phòng thì sạch sẽ, xinh xắn, tiện nghi đầy đủ, giường êm cực kỳ luôn! Nhân viên ở đây siêu dễ thương, lúc nào cũng niềm nở và sẵn sàng giúp đỡ. Wi-Fi mạnh, mọi thứ đều tiện lợi và thoải mái. Nhất định em sẽ quay lại vì thực sự thích nơi này quá trời! 🥰",
   }
 ];
 
@@ -110,9 +115,8 @@ const AboutPage = () => {
            <button className='btn btn-lg btn-primary mx-auto hover:text-accent' onClick={(e) => openRoom(e)}>Đặt Phòng</button>
          </div>
          </div>
-         <div className='flex flex-col items-center border-l border-secondary'>
-             <img src={hotel2} className='lg:w-full lg:h-full h-72  relative px-4 py-6 hover:scale-110 transition-all duration-300 hidden lg:block'/>
-            {/* <img src={hotel2} className='w-full h-full -py-48'/> */}
+          <div className='flex flex-col items-center border-l border-secondary'>
+            <img src={hotel2} className='lg:h-full h-72 w-full object-cover relative px-4 py-6 hover:scale-110 transition-all duration-300 hidden lg:block' />
           </div>
         </div>
       </div>
