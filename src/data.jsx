@@ -14,19 +14,12 @@ import Room6ImgLg from './assets/img/rooms/402.jpg';
 import Room7Img from './assets/img/rooms/501.jpg';
 import Room7ImgLg from './assets/img/rooms/501.jpg';
 import { FaBowlRice } from "react-icons/fa6";
-import Dessert from './assets/img/menu/Dessert.jpg';
-import Drinks from './assets/img/menu/Drinks.jpg';
-import Main from './assets/img/menu/Main.jpg';
-import starters from './assets/img/menu/starters.jpg';
+
 import Blog1 from './assets/doi-rong.jpg';
 import Blog2 from './assets/cv-anh-sang.jpg';
 import Blog3 from './assets/rung-ngap-man.jpg';
 import Blog4 from './assets/cv-than-thoai.jpg';
 
-import prof1 from './assets/prof1.jpg'
-import prof2 from './assets/prof2.jpg'
-import prof3 from './assets/prof3.jpg'
-import prof4 from './assets/prof4.jpg'
 
 
 // import icons
@@ -76,6 +69,33 @@ export function extractNumber(inputString) {
   const match = inputString.match(/\d+/);
   return match ? parseInt(match[0], 10) : null;
 }
+
+export const roomPhotos = [
+  {
+    id: 1,
+    image: Room1Img,
+  },
+  {
+    id: 2,
+    image: Room2Img,
+  },
+  {
+    id: 3,
+    image: Room3Img,
+  },
+  {
+    id: 4,
+    image: Room4Img,
+  },
+  {
+    id: 5,
+    image: Room5Img,
+  },
+  {
+    id: 6,
+    image: Room6Img,
+  },
+];
 
 
 export const roomData = [
@@ -264,45 +284,6 @@ export const roomData = [
 ];
 
 
-export const menuData = [
-  {
-    id: 1,
-    name: 'Superior Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    image: Dessert,
-    
-  },
-  {
-    id: 2,
-    name: 'Signature Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    image: Drinks,
-   
-  },
-  {
-    id: 3,
-    name: 'Deluxe Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-  
-    image: Main,
-   
-  },
-  {
-    id: 4,
-    name: 'Luxury Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-   
-    image: Dessert,
-  },
-];
-
-
-
-
 export const blogData = [
   {
     id: 1,
@@ -337,51 +318,3 @@ export const blogData = [
 ];
 
 
-
-export const teamList = [
-  {
-      id:'a',
-      title:'General Manager',
-      name:'James res',
-      icon:prof1
-  },
-  {
-      id:'b',
-      title:'Assistant Manager',
-      name:'Tre Nuio',
-      icon:prof2
-  },
-  {
-      id:'c',
-      title:'Operations Manager',
-      name:'Rio Masterk',
-      icon:prof3
-  },
-  {
-      id:'d',
-      title:'Staff',
-      name:'Shawn Beglin',
-      icon:prof4
-  },
-  // {
-  //     id:'e',
-  //     title:'',
-  //     icon:<CgGym/>
-  // },
-  // {
-  //     id:'f',
-  //     title:'',
-  //     icon:<FaLuggageCart/>
-  // },
-  // {
-  //     id:'g',
-  //     title:'',
-  //     icon:<IoKeySharp/>
-  // },
-  // {
-  //     id:'h',
-  //     title:'',
-  //     icon:<MdFlight/>
-  // }
-
-]

@@ -1,8 +1,6 @@
 import React,{useContext} from 'react'
 // import hotel from '../assets/hotel.jpg'
 // import rest from '../assets/img/restrauant.jpg'
-// import Spaz from '../assets/spaz.jpg'
-// import pool from '../assets/swimmingpool.jpg'
 import hotel2 from '../assets/hotel2.jpg'
 import Breaker from '../components/Breaker'
 import { ScreenSizeContext } from '../context/ScreenSizeContext';

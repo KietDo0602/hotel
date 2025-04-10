@@ -102,7 +102,7 @@ const RoomDetails = () => {
              <ul className='flex flex-col gap-y-4'>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>
-                Giờ Nhận Phòng: 3:00 PM- 9:00 PM
+                Giờ Nhận Phòng: 2:00 PM- 9:00 PM
               </li>
               <li className='flex items-center gap-x-4'>
                 <FaCheck className='text-accent'/>

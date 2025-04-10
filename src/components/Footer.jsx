@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
-  const { rooms } = useContext(RoomContext);
+  const { photos } = useContext(RoomContext);
 
   return(
     <>
@@ -50,7 +50,7 @@ const Footer = () => {
          <div className='xl:w-1/3 pr-4'>
             <h1 className='font-primary py-2 text-accent'>THƯ VIỆN ẢNH</h1>
            <div className='grid grid-rows-3 grid-cols-3 lg:-gap-x-10 lg:gap-2 gap-1 lg:pr-16'>
-              {rooms.slice(0,6).map((room)=>(
+              {photos.slice(0,6).map((room)=>(
                 <img key={room} src={room.image} className='lg:w-20 w-28 lg:h-20 h-24' alt=''/>
               ))}
            </div>
@@ -84,7 +84,7 @@ const Footer = () => {
               </p>
            </div>
            <div className='flex flex-row gap-4 text-xl py-4 pb-4 text-accent '>
-             <a target='_blank' rel='noopener noreferrer' href="https://facebook.com/khuelebleu">
+             <a target='_blank' rel='noopener noreferrer' href="https://facebook.com/khuelebleuvilla">
                <FaFacebook className='hover:text-white'/>
              </a>
              <a target='_blank' rel='noopener noreferrer' href="https://www.booking.com/hotel/vn/khue-le-bleu-villa.vi.html">

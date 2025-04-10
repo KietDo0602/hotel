@@ -1,12 +1,12 @@
 import React, {createContext, useEffect, useState} from 'react';
 //data
 import { 
-  menuData, 
   blogData, 
   roomData, 
   formatDate, 
   extractNumber,
   generateBookingLink,
+  roomPhotos,
 } from '../data'
 
 //create-context
@@ -15,7 +15,7 @@ export const RoomContext = createContext();
 const RoomProvider = ({children}) => {
     const [blogs, setBlogs] = useState(blogData);
     const [rooms, setRooms]= useState(roomData);
-    const [menu, setMenu] = useState(menuData);
+    const [photos, setPhotos] = useState(roomPhotos);
     const [adults, setAdults] = useState('2 Người Lớn');
     const [kids, setKids] = useState('0 Trẻ Em');
     const [total, setTotal]= useState(0);
@@ -42,7 +42,7 @@ const RoomProvider = ({children}) => {
     }
    
   return (
-    <RoomContext.Provider value={{checkinDate, setCheckinDate, checkoutDate, setCheckoutDate, rooms, menu, adults, setAdults, kids, setKids, loading, blogs, handleClick}}>
+    <RoomContext.Provider value={{checkinDate, setCheckinDate, checkoutDate, setCheckoutDate, rooms, adults, setAdults, kids, setKids, loading, blogs, photos, handleClick}}>
       {children}
     </RoomContext.Provider>
   )       

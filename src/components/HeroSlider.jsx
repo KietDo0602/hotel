@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Parallax} from 'react-scroll-parallax';
 //Parallax
-import { useParallax  } from 'react-scroll-parallax'
+import { useParallax  } from 'react-scroll-parallax';
 //import swiper react components
-import {Swiper, SwiperSlide} from 'swiper/react'
+import {Swiper, SwiperSlide} from 'swiper/react';
 //import swiper styles
-import 'swiper/css'
-import 'swiper/css/effect-fade'
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 //import required modules
-import {EffectFade, Autoplay} from 'swiper'
+import {EffectFade, Autoplay} from 'swiper';
 
 //images
-import Img1 from '../assets/img/heroSlider/1.jpg'
-import Img2 from '../assets/img/heroSlider/2.jpg'
-import Img3 from '../assets/img/heroSlider/3.jpg'
+import Img1 from '../assets/img/room.jpg';
+import Img2 from '../assets/img/8.jpg';
+import Img3 from '../assets/img/9.jpg';
 
 
 import { useContext } from 'react';
