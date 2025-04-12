@@ -100,7 +100,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/menu/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
                </div>
 
@@ -180,7 +180,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/menu/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
 

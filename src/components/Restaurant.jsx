@@ -1,9 +1,9 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-import ComboA from '../assets/img/menu/banh-da-cua.jpg';
+import ComboA from '../assets/img/menu/banhdacua.jpg';
 import ComboB from '../assets/img/menu/buncacay.jpg';
 import ComboC from '../assets/img/menu/phobo.jpg';
-import ComboD from '../assets/img/menu/comrangduabo.webp';
+import ComboD from '../assets/img/menu/bunthitnuong.jpg';
 
 const dishes = [
   {
@@ -12,7 +12,6 @@ const dishes = [
     main: "Bánh Đa Cua Hải Phòng",
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
     image: ComboA,
   },
   {
@@ -21,7 +20,6 @@ const dishes = [
     main: "Bún Cá Cay Hải Phòng",
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
     image: ComboB,
   },
   {
@@ -30,16 +28,14 @@ const dishes = [
     main: "Phở Bò",
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
     image: ComboC,
   },
   {
     id: 4,
     name: "Combo D",
-    main: "Cơm Rang Dưa Bò",
+    main: "Bún Thịt Nướng",
     side: "Bánh Mì Que",
     drink: "Nước Uống Tự Chọn",
-    price: "120,000 VND",
     image: ComboD,
   },
 ];
@@ -52,7 +48,6 @@ const DishCard = ({ dish, index }) => (
       <p className="text-white mb-4 flex-grow">{dish.main}</p>
       <p className="text-white mb-4 flex-grow">{dish.side}</p>
       <p className="text-white mb-4 flex-grow">{dish.drink}</p>
-      {/* <p className="text-lg text-accent">{dish.price}</p> */}
     </div>
   </div>
 );
