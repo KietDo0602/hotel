@@ -3,6 +3,10 @@ import { useContext } from 'react'
 import { RoomContext } from '../context/RoomContext'
 import MenuRes from './MenuRes'
 import {ScreenSizeContext} from '../context/ScreenSizeContext'
+import outsideImage from '../assets/img/outside.jpg';
+import kitchenImage from '../assets/img/kitchen.jpg';
+import buncacayImage from '../assets/img/menu/buncacay.jpg';
+import boardgameImage from '../assets/img/boardgame.jpg';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -72,7 +76,7 @@ const Facilities = () => {
            </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2' >
-              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/outside.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:`url('${outsideImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
               
@@ -100,7 +104,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/menu/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:`url('${buncacayImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
                </div>
 
@@ -108,7 +112,7 @@ const Facilities = () => {
           </div>
           <div className='flex lg:flex-row flex-col  justify-between'>
             <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/kitchen3.jpg')", backgroundAttachment:'fixed', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:`url('${kitchenImage}')`, backgroundAttachment:'fixed', background:'cover'}}>
 
               </div>
            
@@ -138,7 +142,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/boardgame.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:`url('${boardgameImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
                 
@@ -165,7 +169,7 @@ const Facilities = () => {
               </div>  
                </div>
                <div className='lg:w-1/2' >
-                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/outside.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
+                 <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:`url('${outsideImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}></div>
                </div>
              </div>
              <div className='flex lg:flex-row flex-col  justify-between'>
@@ -180,7 +184,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2' >
-               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/menu/buncacay.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+               <div className='lg:h-screen h-48 w-full bg-fixed bg-center bg-cover' style={{backgroundImage:`url('${buncacayImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
 
@@ -199,7 +203,7 @@ const Facilities = () => {
                </div>
              </div>
              <div className='lg:w-1/2 w-full' >
-               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:"url('/src/assets/img/kitchen3.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+               <div className='lg:h-screen h-48 w-full bg-center bg-cover' style={{backgroundImage:`url('${kitchenImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
              </div>
             </div>
              </div>
@@ -216,7 +220,7 @@ const Facilities = () => {
                 </div> 
             </div>
             <div className='lg:w-1/2'>
-              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:"url('src/assets/img/boardgame.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
+              <div className='w-full lg:h-screen h-48 bg-center bg-cover' style={{backgroundImage:`url('${boardgameImage}')`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}} >
 
               </div>
             </div>

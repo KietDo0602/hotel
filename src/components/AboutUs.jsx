@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import hotelImg from '../assets/img/hotel.jpg';
 
 
 const AboutUs = () => {
   return (
     <div className='w-full lg:h-screen flex lg:flex-row flex-col justify-between lg:mt-36 mt-8 lg:px-24 px-8 '>
-      <div className='w-3/4 h-full bg-center' style={{backgroundImage:"url('/src/assets/img/hotel.jpg')", backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
+      <div className='w-3/4 h-full bg-center' style={{backgroundImage:`url(${hotelImg})`, backgroundAttachment:'fixed', backgroundPosition:'center', background:'cover'}}>
        </div>
       <div className='text-white lg:w-1/2 w-full flex flex-col lg:justify-center justify-start lg:px-8 px-2 lg:mb-0 mb-16'>
         <h2 className='text-lg py-2 font-secondary text-accent'>Về Chúng Tôi</h2>
