@@ -81,6 +81,18 @@ const Contact = () => {
                 </div>
               </a>
 
+              <a target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/khuelebleuvilla/">
+                <div className='flex py-4  gap-5 px-4 border-b border-r-accent'>
+                  <div className='text-accent'>
+                     <IoLocation size={20}/>
+                  </div>
+                  <div className='text-white'>
+                     <h2 className='font-primary text-lg'>Facebook</h2>
+                     <p>Khue Le Bleu</p>
+                  </div>
+                </div>
+              </a>
+
               <a target='_blank' rel='noopener noreferrer' href="mailto:khuelebleu@gmail.com">
                 <div className='flex py-4  gap-5 px-4 border-b border-r-accent' >
                   <div className='text-accent'>
